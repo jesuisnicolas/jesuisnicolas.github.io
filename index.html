@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Page</title>
+    <meta name="description" content="This page will serve as an assignment portal 
+    with links to lesson assignments and projects.">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Nicolas Schaberger's WDD230 Assignments Portal</title>
 </head>
+
 <body>
-    <h1>Nicolas' Test Page</h1>
+    <header>
+        <div class="nameBox">
+            <h1>Nicolas F. Schaberger</h1>
+        </div>
+        <img src="/images/me.jpg" alt="A picture of Nicolas looking classy">
+        <div class="pageTitle">
+            <h2>WDD 230: Assignment Portal</h2>
+            <hr>
+        </div>
+    </header>
+    
+    <main>
+        <nav class="assignmentLinks">
+            <ul>Lesson 01: <a href="#">Assingment Link</a></ul>
+            <ul>Lesson 02: <a href="" onclick="wait()">Assingment Link</a></ul>
+            <ul>Lesson 03: <a href="" onclick="wait2()">Assingment Link</a></ul>
+        </nav>
+    </main>
+    <footer>
+        &copy; 2020 | Nicolas F. Schaberger | Santa Fe, Argentina | <a href="https://www.byui.edu/online" target="_blank">BYU-I Online Learning</a>
+        <br>
+        Last Updated: <span id="lastMod"></span>
+    </footer>
+    <script src="/js/lastmodified.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:wght@700&family=Open+Sans:wght@300;400&display=swap');
+
+html {
+    max-width: 760px;
+    background-color: azure;
+    margin: 15px auto;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+}         
+
+.nameBox,
+footer {
+    background-color: dodgerblue;
+    color: lavender;
+    border-radius: 0.6rem;
+}
+
+footer {
+    padding: 1.1rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: "GFS Neohellenic", sans-serif;
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-left: 15px;
+}
+
+img {
+    width: 25%;
+    border: black solid 2px;
+    float: right;
+    margin: -120px 25px 0 0;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.pageTitle,
+.assignmentLinks {
+    margin-left: 10px;
+}
+
+hr {
+    margin-top: -10px;
+}
+
+ul{
+    display: list-item;
+    list-style-type: square;
+    list-style-position: inside;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    color: cyan;
+}

@@ -16,8 +16,9 @@ footer {
 }
 
 footer {
-    padding: 1.1rem;
+    padding: 0.8rem;
     text-align: center;
+    font-size: 0.8rem;
 }
 
 h1 {
@@ -45,7 +46,7 @@ hr {
     margin-top: -10px;
 }
 
-ul{
+li{
     display: list-item;
     list-style-type: square;
     list-style-position: inside;
@@ -56,4 +57,10 @@ a{
 }
 a:hover{
     color: cyan;
+}
+p > a{
+    color: lavender;
+}
+p{
+    margin: 1px;
 }

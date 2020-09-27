@@ -2,3 +2,75 @@
 font-family: 'Carter One', cursive;
 font-family: 'Ubuntu', sans-serif;
 */
+/* body rules */
+
+body{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+}
+
+/* header rules */
+
+header {
+    background-color: #f1f471;
+    padding: 1rem 2%;
+    width: 100%;
+}
+header h1{
+    font-family: "Carter One", cursive;
+    margin: 0;
+    text-align: center;
+}
+header h2{
+    font-family: "Ubuntu", cursive;
+    margin: 0;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/* main rules*/
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div {
+    background-color: lemonchiffon;
+    border: 2px solid rgb(68, 57, 57);
+    margin: 3%;
+    padding: 1.5%;
+}
+div h3{
+    text-align: left;
+    color: midnightblue;
+    padding: 1.5% 0;
+    font-size: 2rem;
+    margin: 0 0 0 3%;
+}
+div h4{
+    text-align: left;
+    margin-left: 3%;
+    color: midnightblue;
+    margin-top: 0;
+}
+p{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+div img{
+    display: flex;
+    max-width: 100%;
+    margin: 1.5% auto;
+    float: none;
+    border: 3px solid black;
+    align-items: flex-end;
+}
+
+/* footer rules*/
+
+footer{
+    background-color: #f1f471;
+    padding: 1rem 2%;    
+    text-align: center;
+}

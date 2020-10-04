@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://127.0.0.1:5500/lesson3/target-audience.html -->
+<html lang="en" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather Go! is a website with information about
+    the weather and the activities you can take on depending on the current weather.">
+    <link href="./Weather Go! _ Target Audience_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./Weather Go! _ Target Audience_files/nomalize.css">
+    <link rel="stylesheet" href="./Weather Go! _ Target Audience_files/small.css">
+    <link rel="stylesheet" href="./Weather Go! _ Target Audience_files/medium.css">
+    <title>Weather Go! | Target Audience</title>
+</head>
+<body>
+    <header>
+        <h1>Weather GO!</h1>
+        <h2>Site Plan</h2>
+    </header>
+    <nav class="clearfix">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/lesson3/index.html">Home</a></li>
+            <li class="active"><a href="http://127.0.0.1:5500/lesson3/target-audience.html">Target Audience</a></li>
+            <li><a href="http://127.0.0.1:5500/lesson3/color-scheme.html">Color Scheme</a></li>
+            <li><a href="http://127.0.0.1:5500/lesson3/typography.html">Typography</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3>Target Audience</h3>
+        <p>The target audience for this website is any person that has to go out of their home, be it to go to work, 
+            go to school, shopping, hike, ride a bike, or wathever other reason. Whatever reason someone goes out, is 
+            always a good idea to know what the weather is going to be later in the day. Also, thanks to the extended
+            forecast, the audience for this website is anyone who likes to plan their activities ahead.
+        </p>
+        <hr>
+        <h3>Personas</h3>
+        <p><strong>Charles</strong> (32) is a young father of two. He and his wife enjoy spendig time with their kids playing outside.
+            He works in an office downtown, so he leaves early in the morning and get back home in the afternoon.
+            Charles loves his classic car, so much that he doesn't like to drive it under bad weather.
+        </p>
+        <p><strong>Marlene</strong> (20) is taking a sabbatical year before returning to school. She loves everything about keeping
+            her body healthy, so she loves to run, ride bikes, and hike. She posts everyday in her social media accounts
+            pictures and videos of her adventures. Also, she loves to go out with friends. Her favorite is Thai food.
+        </p>
+        <hr>
+    </main>
+    <footer>
+        <p>© 2020 | Nicolas F. Schaberger | Santa Fe, Argentina | <a href="https://www.byui.edu/online" target="_blank">BYU-I Online Learning</a></p>
+        
+    </footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

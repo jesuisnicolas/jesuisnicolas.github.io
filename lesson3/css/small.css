@@ -3,9 +3,34 @@
   font-family: 'Ubuntu', sans-serif;
 */
 
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+}
 
 
 
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: rgb(142, 213, 255);
+}
+header h1 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    }
+header h2 {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -34,4 +59,38 @@ nav ul li a:hover {
 nav ul li.active a {
     background-color: #000;
     color: #fff;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+.palette{
+    width: 75%;
+    margin: 10px auto;
+}
+.Ubuntu{
+    font-family: "Ubuntu";
+}
+.Poppins{
+    font-family: "Poppins";
+}
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: rgb(142, 213, 255);
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }

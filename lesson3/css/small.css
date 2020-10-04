@@ -4,6 +4,10 @@
 */
 
 /*----------- BODY --------------*/
+html{
+    overflow-y: scroll; /*this line prevents the scrollbar for 
+                        repositioning the whole page. Cool*/
+}
 body {
     font-size: 16px;
     font-family: "Ubuntu", sans-serif;
@@ -73,7 +77,7 @@ main {
 .Ubuntu{
     font-family: "Ubuntu";
 }
-.Poppins{
+.Poppins, .brand{
     font-family: "Poppins";
 }
 

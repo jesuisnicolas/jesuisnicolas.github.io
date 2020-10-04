@@ -1,7 +1,6 @@
 @media only screen and (min-width: 560px){
     main{
         grid-template-columns: 1fr 1fr;
-        grid-gap: 1%;
     }
     .repetition{
         grid-column: 1;
@@ -10,7 +9,7 @@
         grid-column: 2;
     }
     .proximity{
-        grid-column: span;
+        grid-column: 1 / 3;
     }
 
 

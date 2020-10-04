@@ -29,17 +29,22 @@ header h2{
 }
 
 /* main rules*/
-
 main{
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 1rem;
 }
 
+section{
+    display: grid;
+}
 div {
     background-color: lemonchiffon;
     border: 2px solid rgb(68, 57, 57);
     margin: 3%;
     padding: 1.5%;
+    display: grid;
+    align-items: end;
 }
 div h3{
     text-align: left;
@@ -55,16 +60,14 @@ div h4{
     margin-top: 0;
 }
 p{
-    margin-left: 3%;
-    margin-right: 3%;
+    margin: 0 3% auto 3%;
 }
-div img{
+img{
     display: flex;
     max-width: 100%;
-    margin: 1.5% auto;
-    float: none;
+    margin: 2% auto;
     border: 3px solid black;
-    align-items: flex-end;
+    align-items: end;
 }
 
 /* footer rules*/

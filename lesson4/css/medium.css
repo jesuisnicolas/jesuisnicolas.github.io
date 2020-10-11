@@ -47,7 +47,10 @@
 	}
 	/* nav li:first-child {
 		display: none;
-	} */
+    } */
+    nav ul.hide{
+        display: flex;
+    }
 
     .sticky{
         position: sticky;

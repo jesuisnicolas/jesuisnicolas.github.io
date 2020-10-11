@@ -24,7 +24,7 @@ header picture img{
 .heading h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin: 0 0 0 0.7rem;
     color: #2f4858;
     
@@ -44,11 +44,12 @@ nav{
     display: block;
 }
 
-nav button{
+section button{
     display: block;
-    margin: .2rem 2%;
+    margin-left: 1rem;
     background-color: transparent;
-    border: none;
+    border: 1px solid white;
+    border-radius: 7px;
     font-size: 1.6rem;
     color: #fff;
 }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page correspons to Preston in the 
+    Weather GO!  website">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/lesson4/css/normalize.css">
+    <link rel="stylesheet" href="/lesson4/css/small.css">
+    <link rel="stylesheet" href="/lesson4/css/medium.css">
+    <link rel="stylesheet" href="/lesson4/css/large.css">
+
+    <title>Preston - Weather GO!</title>
+</head>
+
+<body>
+
+    <header>
+        <picture>
+            <img src="/lesson4/images/logo.png" alt="This image is the logo for Weather Go">
+        </picture>
+        <section class="heading">
+            <h1>Weather GO!</h1>
+            <div class="motto">Weather to go, or not to go</div>
+        </section>
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="">
+            <!-- <li class="ham"><a href="#">Menu</a></li> -->
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Weather Summary</h2>
+        </section>
+        <hr>
+        <section>
+            <h2>5 Days Forecast</h2>
+        </section>
+        <hr>
+        <section>
+            <h2>Article</h2>
+        </section>
+        <hr>
+        <section>
+            <h2>Contact Information</h2>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <p>&copy; 2020 | Nicolas F. Schaberger | Santa Fe, Argentina | <a
+                href="https://www.byui.edu/online" target="_blank">BYU-I Online Learning</a></p>
+        <p>Current Date: <span class="currentDate"></span></p>
+    </footer>
+    <script src="/lesson4/js/currentDate.js"></script>
+    <script src="/lesson4/js/lastModified.js"></script>
+    <script src="js/responsiveMenu.js"></script>
+</body>
+
+</html>

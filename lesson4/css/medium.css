@@ -1,0 +1,64 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    header{
+        justify-content:center;
+    }
+    header picture img{
+        width: 115px;
+        margin-right: 10%;
+    }
+    .heading {
+        display: flex;
+        flex-direction: column;
+    }
+    .heading h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+        margin: 0 0 0 0.7rem;
+        color: #2f4858;
+        
+    }
+    .motto {
+        /* font-style: italic; */
+        color: #2f4858;
+        font-size: 1rem;
+        margin: 0 0 0 1rem;
+        
+    }
+
+    /***** NAVIGATION MENU *****/
+    nav button{
+        display: none;
+    }
+    ul {
+		display: flex;
+	}
+	ul li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	ul li a {
+        text-align: center;
+        display: inline-flex;
+	}
+	/* nav li:first-child {
+		display: none;
+	} */
+
+
+/***** MAIN *****/
+    main{
+        max-width: 765px;
+        margin: 0 auto;
+    }
+
+
+/***** FOOTER *****/
+
+    footer{
+        max-width: 765px;
+    }
+
+} /*end medium */

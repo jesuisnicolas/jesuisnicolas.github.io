@@ -3,6 +3,8 @@
 
     header{
         justify-content:center;
+        position: sticky;
+        top: 0;
     }
     header picture img{
         width: 115px;
@@ -47,6 +49,10 @@
 		display: none;
 	} */
 
+    .sticky{
+        position: sticky;
+        top: 0;
+    }
 
 /***** MAIN *****/
     main{
@@ -59,6 +65,9 @@
 
     footer{
         max-width: 765px;
+    }
+    footer p{
+        margin: 8px auto;
     }
 
 } /*end medium */

@@ -1,0 +1,68 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    header{
+        justify-content:center;
+        position: sticky;
+        top: 0;
+    }
+    header picture img{
+        width: 115px;
+        margin-right: 10%;
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+        margin: 0 0 0 0.7rem;
+        
+    }
+    .motto {
+        font-size: 1rem;
+        margin: 0 0 0 1rem;
+        
+    }
+
+    /***** NAVIGATION MENU *****/
+    section button{
+        display: none;
+    }
+    ul {
+		display: flex;
+	}
+	ul li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	ul li a {
+        text-align: center;
+        display: inline-flex;
+	}
+	/* nav li:first-child {
+		display: none;
+    } */
+    nav ul.hide{
+        display: flex;
+    }
+
+    .sticky{
+        position: sticky;
+        top: 0;
+    }
+
+/***** MAIN *****/
+    main{
+        max-width: 765px;
+        margin: 0 auto;
+    }
+
+
+/***** FOOTER *****/
+
+    footer{
+        max-width: 765px;
+    }
+    footer p{
+        margin: 8px auto;
+    }
+
+} /*end medium */

@@ -14,6 +14,15 @@ body{
 }
 
 /*****  HEADING SECTION ******/ 
+#message p:first-child{
+    background-color: rgba(246, 174, 45,1);
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+.hide{display:none;}
+.show{display: block;}
+
 header{
     background-color:  #55DDE0;
     width: 100%;
@@ -94,12 +103,13 @@ hr{
     background: var(--divider-color);
     
 }
+
 .hero{
     position: relative;
 }
 .overprint{
     position: absolute;
-    top: 1rem;
+    top: 2rem;
     margin-left: 3rem;
     background-color: rgba(255, 255, 255, 0.4);
     padding: 1rem 1rem;
@@ -110,20 +120,22 @@ hr{
 .overprint h5, p{
     margin: 3px 0 0 0;
 }
-section img{
+.heroImage{
     width: 100%;
+    object-fit: cover;
+    min-height: 180px;
 }
 .fiveDaysForecast{
     display:none;
 }
-
-.contactGrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.articleImage{
+    display: block;
+    width: 100%;
 }
+
 .contactInfo{
-    grid-column: 1;
-    margin-left: 1.5rem;
+
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 7rem;
@@ -141,9 +153,11 @@ section img{
     grid-row: 1;
     align-self: flex-end;
 }
-
 iframe{
-    grid-column: 2;
+    margin: 1rem auto;
+    display: block;
+    width: 100%;
+    height: 200px;
 }
 /***** FOOTER *****/
 

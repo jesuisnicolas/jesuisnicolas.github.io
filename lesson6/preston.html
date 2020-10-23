@@ -7,8 +7,6 @@
     <meta name="description" content="This page correspons to Preston in the 
     Weather GO!  website">
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Ubuntu:wght@300&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="css/normalize_min.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -19,7 +17,7 @@
 
 <body>
     <div id="message" class="">
-        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
     </div>
     <section class="sticky">
         <header>
@@ -50,13 +48,17 @@
     <main>
         <h1>Preston</h1>
         <section class="hero">
-            <img class="heroImage" src="images/heroCreek.jpg" alt="Hero image working as backgound for the weather information.">
+            <picture class="heroImage">
+                <source media="(max-width: 400px)" srcset="images/heroimage/franklnHero-400.jpg">
+                <source media="(max-width: 600px)" srcset="images/heroimage/franklnHero-600.jpg">
+                <img src="images/heroimage/franklnHero-900.jpg" alt="hero image">
+            </picture>
             <div class="overprint">
-                <h5>Weather <br>
-                    Summary</h5>
-                <p>High: 36&#8451;</p>
-                <p>Low: 22&#8451;</p>
-                <p>Wind: 3 km/h</p>
+                <h5>Summary</h5>
+                <p>Currently: Sunny</p>
+                <p>High: <span id="currentHigh">26</span>&deg;F</p>
+                <p>Wind Chill: <span id="windChill"></span>&deg;F</p>
+                <p>Wind: <span id="wind">4</span>MPH</p>
             </div>
         </section>
         <div class="fiveDaysForecast">
@@ -67,27 +69,27 @@
                 <div>
                     <h5>Monday</h5>
                     <img src="images/weather icons/Sunny.gif" alt="sunny">
-                    <p>31&#8451;</p>
+                    <p>31&deg;F</p>
                 </div>
                 <div>
                     <h5>Tuesday</h5>
                     <img src="images/weather icons/Cloudy.gif" alt="cloudy">
-                    <p>29&#8451;</p>
+                    <p>29&deg;F</p>
                 </div>
                 <div>
                     <h5>Wednesday</h5>
                     <img src="images/weather icons/Rainy.gif" alt="rainy">
-                    <p>22&#8451;</p>
+                    <p>22&deg;F</p>
                 </div>
                 <div>
                     <h5>Thursday</h5>
                     <img src="images/weather icons/Thunderstorm.gif" alt="thunderstorm">
-                    <p>20&#8451;</p>
+                    <p>20&deg;F</p>
                 </div>
                 <div>
                     <h5>Friday</h5>
                     <img src="images/weather icons/Sunny.gif" alt="sunny">
-                    <p>28&#8451;</p>
+                    <p>28&deg;F</p>
                 </div>
         </div>
         </section>
@@ -97,7 +99,7 @@
             <p>This year we all experienced some form of ‘coronacation’ that gave us more time at home. Did your
                 involuntary home-bound hiatus lead you to the garden? Whether this was your maiden voyage in gardening
                 or if you are seasoned sailor of the soil, next year can be even better.</p>
-                <img class="articleImage" src="images/oraganicFood.jpg" alt="image of organic vegetables">
+            <img class="articleImage" src="images/oraganicFood.jpg" alt="image of organic vegetables">
             <p>This year we all experienced some form of ‘coronacation’ that gave us more time at home. Did your
                 involuntary home-bound hiatus lead you to the garden? Whether this was your maiden voyage in gardening
                 or if you are seasoned sailor of the soil, next year can be even better.</p>
@@ -116,22 +118,21 @@
                     <h5>Address:</h5>
                     <br>
                     <p>Weather GO!<br>
-                    123 Main Street<br>
-                    Franklin, MI 87654</p>
+                        123 Main Street<br>
+                        Franklin, MI 87654</p>
                 </div>
                 <div>
                     <h5>Phone:</h5>
                     <p>(801) 555-1234</p>
-                </div>    
+                </div>
                 <div>
                     <h5>email:</h5>
                     <p>contact@weathergo.net</p>
-                </div>    
+                </div>
             </div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47364.27923690263!2d-111.88357561314828!3d42.10174251005166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1602895862546!5m2!1ses!2sar"
-                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0"></iframe>
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
         <hr>
     </main>
@@ -143,7 +144,17 @@
     <script src="js/currentDate.js"></script>
     <script src="js/responsiveMenu.js"></script>
     <script src="js/message.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+        WebFont.load({
+            google: {
+                families: [
+                    "Poppins"
+                    "Ubuntu"
+                ]
+            }
+        });
+    </script>
 </body>
 
 </html>

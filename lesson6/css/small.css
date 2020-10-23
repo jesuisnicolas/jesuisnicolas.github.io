@@ -107,6 +107,13 @@ hr{
 .hero{
     position: relative;
 }
+.heroImage{
+    display: block;
+    width: 100%;
+}
+.heroImage img{
+    width: 100%;
+}
 .overprint{
     position: absolute;
     top: 2rem;
@@ -120,11 +127,7 @@ hr{
 .overprint h5, p{
     margin: 3px 0 0 0;
 }
-.heroImage{
-    width: 100%;
-    object-fit: cover;
-    min-height: 180px;
-}
+
 .fiveDaysForecast{
     display:none;
 }

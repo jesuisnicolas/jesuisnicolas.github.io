@@ -74,10 +74,12 @@
         grid-template-rows: 1fr;
     }
     .fiveDaysBackground{
+        width: 100%;
         grid-column: 1 / 6;
         z-index: -1;
         grid-row: 1;
     }
+    .fiveDaysBackground img{width: 100%;}
     .fiveDaysContainer div:nth-child(2){grid-column: 1; grid-row: 1; z-index: 1;}
     .fiveDaysContainer div:nth-child(3){grid-column: 2; grid-row: 1; z-index: 1;}
     .fiveDaysContainer div:nth-child(4){grid-column: 3; grid-row: 1; z-index: 1;}

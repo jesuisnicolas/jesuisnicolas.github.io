@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page correspons to Preston in the 
+    Weather GO!  website">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize_min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <title>Preston - Weather GO!</title>
+</head>
+
+<body>
+    <div id="message" class="">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <section class="sticky">
+        <header>
+            <picture>
+                <img src="images/logo.png" alt="This image is the logo for Weather Go">
+            </picture>
+            <section class="heading">
+                <h1>Weather GO!</h1>
+                <h2 class="motto">Weather to go, or not to go</h2>
+            </section>
+            <button onclick="toggleMenu()">&#9776;</button>
+        </header>
+
+        <nav>
+            <!-- <button onclick="toggleMenu()">&#9776;</button> -->
+            <ul id="primaryNav" class="hide">
+                <!-- <li class="ham"><a href="#">Menu</a></li> -->
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="/lesson7/gallery.html">Gallery</a></li>
+
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <h1>Preston</h1>
+        <section class="hero">
+            <picture class="heroImage">
+                <source media="(max-width: 400px)" srcset="images/heroimage/franklnHero-400.jpg">
+                <source media="(max-width: 600px)" srcset="images/heroimage/franklnHero-600.jpg">
+                <img src="images/heroimage/franklnHero-900.jpg" alt="hero image">
+            </picture>
+            <div class="overprint">
+                <h5>Summary</h5>
+                <p>Currently: Sunny</p>
+                <p>High: <span id="currentHigh">26</span>&deg;F</p>
+                <p>Wind Chill: <span id="windChill"></span>&deg;F</p>
+                <p>Wind: <span id="wind">4</span>MPH</p>
+            </div>
+        </section>
+        <div class="fiveDaysForecast">
+            <hr>
+            <h2>Five Day Forecast</h2>
+            <section class="fiveDaysContainer">
+                <picture class="fiveDaysBackground"><img src="images/fiveDayForecastBackground.jpg" alt=""></picture>
+                <div>
+                    <h5>Monday</h5>
+                    <img src="images/weather-icons/Sunny.gif" alt="sunny">
+                    <p>31&deg;F</p>
+                </div>
+                <div>
+                    <h5>Tuesday</h5>
+                    <img src="images/weather-icons/Cloudy.gif" alt="cloudy">
+                    <p>29&deg;F</p>
+                </div>
+                <div>
+                    <h5>Wednesday</h5>
+                    <img src="images/weather-icons/Rainy.gif" alt="rainy">
+                    <p>22&deg;F</p>
+                </div>
+                <div>
+                    <h5>Thursday</h5>
+                    <img src="images/weather-icons/Thunderstorm.gif" alt="thunderstorm">
+                    <p>20&deg;F</p>
+                </div>
+                <div>
+                    <h5>Friday</h5>
+                    <img src="images/weather-icons/Sunny.gif" alt="sunny">
+                    <p>28&deg;F</p>
+                </div>
+            </section>
+        </div>
+        
+        <hr>
+        <section class="article">
+            <h2>Organic matter makes better gardens</h2>
+            <p>This year we all experienced some form of ‘coronacation’ that gave us more time at home. Did your
+                involuntary home-bound hiatus lead you to the garden? Whether this was your maiden voyage in gardening
+                or if you are seasoned sailor of the soil, next year can be even better.</p>
+            <img class="articleImage" src="images/oraganicFood.jpg" alt="image of organic vegetables">
+            <p>This year we all experienced some form of ‘coronacation’ that gave us more time at home. Did your
+                involuntary home-bound hiatus lead you to the garden? Whether this was your maiden voyage in gardening
+                or if you are seasoned sailor of the soil, next year can be even better.</p>
+            <p>Many problems with home vegetable gardens, fruit trees, shrubs, and flower gardens are caused not by
+                pests, diseases, or a lack of nutrients, but by poor soil physical conditions. A productive soil
+                provides physical support, water, air, and nutrients to plants. In a good soil, between 40 and 60
+                percent of the soil volume is pores. The pores may be filled with water or air, making both available to
+                plants. Clay soils are commonly deficient in pore space. Sandy soils are often nutrient-poor and lack
+                water-holding capacity. Amending the soil with organic matter benefits both textures.</p>
+        </section>
+        <hr>
+        <section class="contactGrid">
+            <h2>Contact Us</h2>
+            <div class="contactInfo">
+                <div>
+                    <h5>Address:</h5>
+                    <br>
+                    <p>Weather GO!<br>
+                        123 Main Street<br>
+                        Franklin, MI 87654</p>
+                </div>
+                <div>
+                    <h5>Phone:</h5>
+                    <p>(801) 555-1234</p>
+                </div>
+                <div>
+                    <h5>email:</h5>
+                    <p>contact@weathergo.net</p>
+                </div>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47364.27923690263!2d-111.88357561314828!3d42.10174251005166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1602895862546!5m2!1ses!2sar"
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <p>&copy; 2020 | Nicolas F. Schaberger | Santa Fe, Argentina | <a href="https://www.byui.edu/online"
+                target="_blank">BYU-I Online Learning</a></p>
+        <p>Current Date: <span id="current-date"></span></p>
+    </footer>
+    <script src="js/currentDate.js"></script>
+    <script src="js/responsiveMenu.js"></script>
+    <script src="js/message.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+        WebFont.load({
+            google: {
+                families: [
+                    "Poppins",
+                    ""
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

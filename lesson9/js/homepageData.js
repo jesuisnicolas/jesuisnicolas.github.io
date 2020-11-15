@@ -28,22 +28,22 @@ fetch(requestURL)
       let rainfall = document.createElement('p');
       let img = document.createElement('img')
 
-      img.setAttribute('src', `images/${towns.photo}`);
+      img.setAttribute('src', `images/home/${selTowns.photo}`);
       townName.textContent = selTowns.name;
       motto.textContent = selTowns.motto;
       yearFounded.textContent = 'Year Founded: ' + selTowns.yearFounded;
       population.textContent = 'Population: ' + selTowns.currentPopulation;
       rainfall.textContent = 'Annual Rain Fall: ' + selTowns.averageRainfall;
 
-      card.appendChild(div);
+      card.appendChild(div);   
       div.appendChild(townName);
       div.appendChild(motto);
       div.appendChild(yearFounded);
       div.appendChild(population);
       div.appendChild(rainfall);
+      card.appendChild(div);
       div.appendChild(img);
-
-
+      
       document.querySelector("div.card").appendChild(card);
 
   }});

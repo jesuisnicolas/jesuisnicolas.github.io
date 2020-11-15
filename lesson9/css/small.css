@@ -313,6 +313,27 @@ h1.thanks{
 #indexHeroImage{
     width: 100%;
 }
+div.card{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: auto;
+    column-gap: 0.7rem;
+    row-gap: 1rem;
+}
+div.card section{
+    background-color: var(--decoration-color-2);
+    border: 2px solid white;
+}
+section div h2, h4, p{
+    text-align: center;
+}
+section div img{
+    width: 80%;
+    margin: 0.3rem 10% 0 10%;
+    align-self: end;
+}
+
 
 
 

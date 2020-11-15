@@ -37,6 +37,23 @@
 
     form label.sbs{
         padding: .4rem 0;
-        
     }
+
+    /****************** HOMEPAGE *********************/
+
+    div.card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1000px;
+        margin: auto;
+    }
+    section div h2, h4, p{
+        text-align: center;
+    }
+    section div img{
+        width: 80%;
+        margin: 0.3rem 10%;
+    }
+
+    
 } /*end large */

@@ -165,23 +165,58 @@
     /********************* HOMEPAGE **********************************/
     div.card{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
         max-width: 800px;
         margin: auto;
-        column-gap: 0.7rem;
+        /* column-gap: 0.7rem; */
         row-gap: 1rem;
     }
     div.card section{
         background-color: var(--decoration-color-2);
         border: 2px solid white;
+        grid-column: 1 / 4;
+        display: flex;
     }
+        
     section div h2, h4, p{
         text-align: center;
     }
-    section div img{
-        width: 80%;
-        margin: 0.3rem 10% 0 10%;
-        align-self: end;
+    div.card section div h2{
+        margin-bottom: 0.1rem;
     }
-    
+
+    div.card section:nth-child(even) div{
+        /* grid-column: 2; */
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        order: 2;
+    }
+    div.card section:nth-child(even) picture{
+        width: 50%;
+        margin: 0.3rem auto;
+        justify-self: auto;
+        order: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    div.card section:nth-child(odd) div{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    div.card section:nth-child(odd) picture{
+        grid-column: 2;
+        width: 50%;
+        margin: 0.3rem auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    div.card section picture img{
+        width: 80%;
+    }
+
+
 } /*end medium */

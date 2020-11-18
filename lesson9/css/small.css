@@ -325,13 +325,17 @@ div.card section{
     background-color: var(--decoration-color-2);
     border: 2px solid white;
 }
-section div h2, h4, p{
+div.card section div h2, h4, p{
     text-align: center;
 }
-section div img{
+div.card section picture{
     width: 80%;
-    margin: 0.3rem 10% 0 10%;
-    align-self: end;
+    margin: 0 10%;
+}
+
+div.card section picture img{
+    width: 80%;
+    margin: 0.5rem auto;
 }
 
 

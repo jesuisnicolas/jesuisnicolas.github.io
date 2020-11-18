@@ -20,7 +20,8 @@ fetch(requestURL)
       
     function makeCards(selTowns){
       let card = document.createElement('section');
-      let div =document.createElement('div');
+      let div = document.createElement('div');
+      let pic = document.createElement('picture');
       let townName = document.createElement('h2');
       let motto = document.createElement('h4');
       let yearFounded = document.createElement('p');
@@ -41,8 +42,8 @@ fetch(requestURL)
       div.appendChild(yearFounded);
       div.appendChild(population);
       div.appendChild(rainfall);
-      card.appendChild(div);
-      div.appendChild(img);
+      card.appendChild(pic);
+      pic.appendChild(img);
       
       document.querySelector("div.card").appendChild(card);
 

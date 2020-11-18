@@ -47,12 +47,41 @@
         max-width: 1000px;
         margin: auto;
     }
-    section div h2, h4, p{
+    div.card section{
+        grid-column: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        align-content: baseline;
+    }
+
+    div.card section:nth-child(odd) div{
+        margin: 1rem auto;
+        width: 98%;
+    }
+    div.card section:nth-child(even) div{
+        margin: 1rem auto;
+        width: 98%;
+    }
+    div.card section div h2, h4, p{
         text-align: center;
     }
-    section div img{
-        width: 80%;
-        margin: 0.3rem 10%;
+
+    div.card section:nth-child(odd) picture{
+        width: 90%;
+        margin: 0.3rem auto; 
+        align-self: end;
+        
+    }
+    div.card section:nth-child(even) picture{
+        width: 90%;
+        margin: 0.3rem auto; 
+        align-self: end;
+        order: 2;
+    }
+
+    div.card section picture img{
+        width: 100%
     }
 
     

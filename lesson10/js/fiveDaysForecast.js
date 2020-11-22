@@ -29,6 +29,7 @@ fetch(forecastAPI)
             console.log(iconpath)
             document.getElementById(`forecastDay${dayBox}`).innerHTML=weekDays[forecastDayNumber];
             document.getElementById(`max${dayBox}`).innerHTML=mylist[i].main.temp_max;
+            // document.getElementById(`min${dayBox}`).innerHTML=mylist[i].main.temp_min;
             document.getElementById(`forecastIcon${dayBox}`).src = iconpath;
 
             dayBox += 1

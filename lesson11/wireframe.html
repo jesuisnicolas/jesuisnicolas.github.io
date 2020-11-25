@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the home page of the 
+    Weather GO!  website">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize_min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <title>Home - Weather GO!</title>
+</head>
+
+<body>
+    <section class="sticky">
+        <header>
+            <picture>
+                <img src="images/logo.png" alt="This image is the logo for Weather Go">
+            </picture>
+            <section class="heading">
+                <h1>Weather GO!</h1>
+                <h2 class="motto">Weather to go, or not to go</h2>
+            </section>
+            <button onclick="toggleMenu()">&#9776;</button>
+        </header>
+
+        <nav>
+            <!-- <button onclick="toggleMenu()">&#9776;</button> -->
+            <ul id="primaryNav" class="hide">
+                <!-- <li class="ham"><a href="#">Menu</a></li> -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <img src="images/wireframe/largeWireframe.jpg" alt="wireframe for the large version of the site" class="wireframe">
+        <hr>
+        <img src="images/wireframe/medium-wireframe.jpg" alt="wireframe for the medium version of the site" class="wireframe">
+        <hr>
+        <img src="images/wireframe/small-wireframe.jpg" alt="wireframe for the small version of the site" class="wireframe">
+        <footer>
+        <p>&copy; 2020 | Nicolas F. Schaberger | Santa Fe, Argentina | <a href="https://www.byui.edu/online"
+                target="_blank">BYU-I Online Learning</a></p>
+        <p>Current Date: <span id="current-date"></span></p>
+    </footer>
+    <script src="js/currentDate.js"></script>
+    <script src="js/responsiveMenu.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({google: {families: ["Poppins: 500, 700, 900", "Ubuntu"]}});
+    </script> -->
+    
+</body>
+
+</html>

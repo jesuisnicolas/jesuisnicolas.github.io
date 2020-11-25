@@ -1,5 +1,5 @@
 /* 35em is also 560px when basefont is 16px */
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 36rem) {
 
     header{
         justify-content:center;
@@ -74,12 +74,16 @@
         grid-template-rows: 1fr;
     }
     .fiveDaysBackground{
-        width: 100%;
         grid-column: 1 / 6;
         z-index: -1;
         grid-row: 1;
     }
-    .fiveDaysBackground img{width: 100%;}
+    .fiveDaysBackground img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .fiveDaysContainer div:nth-child(2){grid-column: 1; grid-row: 1; z-index: 1;}
     .fiveDaysContainer div:nth-child(3){grid-column: 2; grid-row: 1; z-index: 1;}
     .fiveDaysContainer div:nth-child(4){grid-column: 3; grid-row: 1; z-index: 1;}
@@ -92,14 +96,14 @@
         border-collapse: collapse;
         background-color: rgba(255, 255, 255, 0.1);
         width: 75%;
-        height: 80%;
         justify-self: center;
         align-self: center;
         border-radius: 9px;        
+        margin: 5% auto;
     }
     .fiveDaysContainer div h5{
         margin-top: 0;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         padding: 0.7rem;
         background-color: rgba(246, 174, 45, 0.5);
         border-radius: 9px 9px 0 0;
@@ -111,6 +115,7 @@
     }
     .fiveDaysContainer div p{
         font-weight: bold;
+        margin-bottom: 10px;
     }
 
     .articleImage{

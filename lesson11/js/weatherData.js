@@ -2,8 +2,20 @@
 //ADD the key and change units to imperial
 const apiKey = "76906579f4efc58a128720f93bf9efd1";
 const prestonID = "5604473";
+const sodaID = "5607916"; 
+const fishID = "5585010";
+var cityId;
 
-const apiURL = `//api.openweathermap.org/data/2.5/weather?id=${prestonID}&appid=${apiKey}&units=imperial`;
+var city = document.getElementById("cityName").innerText;
+if (city == "Preston"){
+  cityId = prestonID;
+} else if (city =="Soda Springs"){
+    cityId = sodaID;
+  } else if (city == "Fish Haven"){
+      cityId = fishID;
+    }
+
+const apiURL = `//api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=${apiKey}&units=imperial`;
 
 //Go fetch it and then wait for a response.
 fetch(apiURL)

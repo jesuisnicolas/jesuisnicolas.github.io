@@ -3,7 +3,7 @@ const hoy = mydate.getDay();
 
 const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-const forecastAPI = `//api.openweathermap.org/data/2.5/forecast?id=${prestonID}&appid=${apiKey}&units=imperial`;
+const forecastAPI = `//api.openweathermap.org/data/2.5/forecast?id=${cityId}&appid=${apiKey}&units=imperial`;
 
 fetch(forecastAPI)
  .then((response) => response.json())

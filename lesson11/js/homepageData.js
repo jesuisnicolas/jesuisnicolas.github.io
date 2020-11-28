@@ -30,6 +30,7 @@ fetch(requestURL)
       let img = document.createElement('img')
 
       img.setAttribute('src', `images/home/${selTowns.photo}`);
+      img.alt = `Photo of ${selTowns.name}, Idaho`
       townName.textContent = selTowns.name;
       motto.textContent = selTowns.motto;
       yearFounded.textContent = 'Year Founded: ' + selTowns.yearFounded;

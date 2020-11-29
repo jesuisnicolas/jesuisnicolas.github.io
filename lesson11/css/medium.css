@@ -181,6 +181,7 @@
         border: 2px solid white;
         grid-column: 1 / 4;
         display: flex;
+        width: 96%;
     }
         
     section div h2, h4, p{

@@ -8,8 +8,6 @@ const forecastAPI = `//api.openweathermap.org/data/2.5/forecast?id=${cityId}&app
 fetch(forecastAPI)
  .then((response) => response.json())
  .then((jsObject) => {
-   //Once it comes back, display it to the console.
-    console.log(jsObject);
 
     let mylist = jsObject.list;
     let forecastDayNumber = hoy;
@@ -26,7 +24,6 @@ fetch(forecastAPI)
             }
             var iconcode = mylist[i].weather[0].icon;
             var iconpath = "https://openweathermap.org/img/w/" + iconcode + ".png";
-            console.log(iconpath)
             document.getElementById(`forecastDay${dayBox}`).innerHTML=weekDays[forecastDayNumber];
             document.getElementById(`max${dayBox}`).innerHTML=mylist[i].main.temp_max;
             // document.getElementById(`min${dayBox}`).innerHTML=mylist[i].main.temp_min;

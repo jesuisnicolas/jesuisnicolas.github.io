@@ -14,7 +14,6 @@ fetch(requestURL)
         selTowns.push(towns[i]);
         }
     }
-   console.log(selTowns);
 
     selTowns.forEach(makeCards);
       

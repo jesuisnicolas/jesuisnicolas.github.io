@@ -25,7 +25,6 @@ fetch(requestURL)
             function showEvents(item){
                 var event = document.createElement("p");
                 event.textContent = item;
-                // event.appendChild(item);
                 document.querySelector("section.events").appendChild(event);
             }
         }

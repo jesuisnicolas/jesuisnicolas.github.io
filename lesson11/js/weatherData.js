@@ -21,8 +21,6 @@ const apiURL = `//api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=${a
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    //Once it comes back, display it to the console.
-    console.log(jsObject);
     
     document.getElementById("currentCondition").innerHTML=jsObject.weather[0].main;
     document.getElementById("currentHigh").innerHTML=jsObject.main.temp;

@@ -189,22 +189,23 @@ footer{
 .gallery{
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
     /* margin: 0 1vw; */
     /* max-width: 100%; */
 }
-.gallery picture{
+.gallery figure{
     width: 100%;
     border-radius: 5px 5px 0 0;
 }
-.gallery picture img{
+.gallery figure img{
     max-width: 100%;
     border-radius: 5px 5px 0 0;
 }
 
-.gallery picture p{
+.gallery figure figcaption{
     display: none;
 }
-.gallery picture:hover{
+.gallery figure:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
 }
 

@@ -153,13 +153,13 @@
         /* margin: 0 5vw; */
     }
 
-    .gallery picture:nth-child(odd){
+    .gallery figure:nth-child(odd){
         grid-column: 1/3;
     }
-    .gallery picture:nth-child(even){
+    .gallery figure:nth-child(even){
         grid-column: 3/5;
     }
-    .gallery picture:nth-last-child(1){
+    .gallery figure:nth-last-child(1){
         grid-column: 2/4;   
     }
     

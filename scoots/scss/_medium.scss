@@ -1,0 +1,63 @@
+@import "variables"; //Temporarily import variables for 
+//autocomplete purposes.
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+////// HEADER //////
+
+/////// NAVIGATION ///////
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    // background-color: $sapphire-blue;
+}
+nav ul li{
+    margin: auto 1rem;
+    border-radius: 0 0 .5rem .5rem;
+    background-color: $sapphire-blue;
+    
+}
+nav ul li:hover{
+        // background-color: $ultramarine-blue;
+        background-color: red;
+}
+ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    margin: auto 1rem;
+    color: white;
+}
+
+////// HERO IMAGE //////
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    .indexHeroImg{
+        grid-column: 1 / 4;
+        grid-row: 1 / 4;
+        z-index: -1;
+        img{
+            width: 100%;
+        }
+    }
+    .heroText{
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+    .heroAction{
+        grid-column: 3/4;
+        grid-row: 2;
+    }
+}
+

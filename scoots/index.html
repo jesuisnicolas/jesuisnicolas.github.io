@@ -17,53 +17,99 @@
 
 <body>
     <header>
-        <div>
-            <img src="images/scoots-logo" alt="Scoot's Logo">
+        <div id="logoDiv">
+            <img src="images/common/scoots-logo.png" alt="Scoots' Logo">
         </div>
         <div class="weatherBox">
-            <div class="weatherTopIcon">
-                <img src="images/common/weather/Cloudy.gif" alt="">
+            <div>
+                <img id="weatherTopIcon" src="" alt="">
             </div>
             <div class="weatherTopData">
-                <p class="weatherTopCondition">Sunny</p>
-                <p class="weatherTopTemp"><span>23</span>&deg;C</p>
-                <p class="weatherTopHumidity"><span>73</span>&percnt;</p>
+                <p>Current Condition:</p>
+                <p><span id="weatherTopCondition"></span></p>
+                <p>Temp:<span id="weatherTopTemp"></span>&deg;C | Humidity: <span id="weatherTopHumidity"></span>%</p>
+                <!-- <p><span id="weatherTopHumidity"></span>&percnt;</p> -->
             </div>
         </div>
     </header>
+    
+    
+        <div class="navAndHero">
+            <nav>
+                <ul id="primaryNav" class="primaryNav">
+                    <li class="ham"><a href="#">Menu</a></li>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-    <nav>
-        <ul id="primaryNav" class="hide">
-            <!-- <li class="ham"><a href="#">Menu</a></li> -->
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="rentals.html">Rentals</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="tours.html">Tours</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <div class="hero">
-            <picture class="indexHeroImg">
-                <source media="(max-width: 400px)" srcset="images/home/indexHero-400.jpg">
-                <source media="(max-width: 600px)" srcset="images/home/indexHero-600.jpg">
-                <img src="images/home/indexHero-1100.jpg" alt="hero image" id="indexHeroImage">
-            </picture>
-            <div class="heroText">
-                <h1>Scoots Moto Rental</h1>
-                <h2>Enjoy Cozumel Freely</h2>
-            </div>
-            <div class="heroAction">
-                <button>
-                    Rent Now!
-                </button>
+            <div class="hero">
+                <picture class="indexHeroImg">
+                    <source media="(max-width: 400px)" srcset="images/home/indexHero-400.jpg">
+                    <source media="(max-width: 600px)" srcset="images/home/indexHero-600.jpg">
+                    <img src="images/home/indexHero-1100.jpg" alt="hero image" id="indexHeroImage">
+                </picture>
+                <div class="heroText">
+                    <h1>Scoots Moto Rental</h1>
+                    <h2>Enjoy Cozumel Freely</h2>
+                </div>
+                <div class="heroAction">
+                    <button>
+                        Rent Now!
+                    </button>
+                </div>
             </div>
         </div>
+    <main>
+        <br>
+        <section>
+            <h2 id="rentalOptions">Our Rental Options:</h2>
+            <div  class="indexSummary">
+                <div class="scooterHomeBan">
+                    <h3 class="h3Chango">Scooters</h3>
+                    <img src="images/home/honda-scooter.jpg" alt="Scooters Banner">
+                </div>
+                <div class="atvHomeBan">
+                    <h3 class="h3Chango">ATVs</h3>
+                    <img src="images/home/honda-atv.jpg" alt="ATVs Banner">
+                </div>
+                <div class="jeepHomeBan">
+                    <h3 class="h3Chango">Jeeps</h3>
+                    <img src="images/home/jeep-wrangler.jpg" alt="Jeep Banner">
+                </div>
+            </div>
+        </section>
+    
+    <h2> 3 Day Forecast for Cozumel</h2>    
+    <section class="weatherForecast">
+        <div>
+            <h5 class="forecastDayName" id="forecastDay1"></h5>
+            <img src="images/common/1px-placeholder.png" alt="" id="forecastIcon1">
+            <p><span id="max1" class="max"></span>&deg;F</p>
+            <!-- <p><span id="min1" class="min"></span>&deg;F</p> -->
+        </div>
+        <div>
+            <h5 class="forecastDayName" id="forecastDay2"></h5>
+            <img src="images/common/1px-placeholder.png" alt="" id="forecastIcon2">
+            <p><span id="max2" class="max"></span>&deg;F</p>
+            <!-- <p><span id="min2" class="min"></span>&deg;F</p> -->
+        </div>
+        <div>
+            <h5 class="forecastDayName" id="forecastDay3"></h5>
+            <img src="images/common/1px-placeholder.png" alt="" id="forecastIcon3">
+            <p><span id="max3" class="max"></span>&deg;F</p>
+            <!-- <p><span id="min3" class="min"></span>&deg;F</p> -->
+        </div>
+    </section>
     </main>
 
     <footer></footer>
 
+    <script src="js/responsiveMenu.js"></script>
+    <script src="js/weatherData.js"></script>
 </body>
 
 </html>

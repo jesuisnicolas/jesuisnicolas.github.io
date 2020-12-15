@@ -9,7 +9,8 @@
 
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Dosis:wght@400;600;700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Dosis:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Scoots | Moto Rental</title>
@@ -32,42 +33,42 @@
             </div>
         </div>
     </header>
-    
-    
-        <div class="navAndHero">
-            <nav>
-                <ul id="primaryNav" class="primaryNav">
-                    <li class="ham"><a href="#">Menu</a></li>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="rentals.html">Rentals</a></li>
-                    <li><a href="reservations.html">Reservations</a></li>
-                    <li><a href="tours.html">Tours</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
 
-            <div class="hero">
-                <picture class="indexHeroImg">
-                    <source media="(max-width: 400px)" srcset="images/home/indexHero-400.jpg">
-                    <source media="(max-width: 600px)" srcset="images/home/indexHero-600.jpg">
-                    <img src="images/home/indexHero-1100.jpg" alt="hero image" id="indexHeroImage">
-                </picture>
-                <div class="heroText">
-                    <h1>Scoots Moto Rental</h1>
-                    <h2>Enjoy Cozumel Freely</h2>
-                </div>
-                <div class="heroAction">
-                    <button>
-                        Rent Now!
-                    </button>
-                </div>
+
+    <div class="navAndHero">
+        <nav>
+            <ul id="primaryNav" class="primaryNav">
+                <li class="ham"><a href="#">Menu</a></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <picture class="indexHeroImg">
+                <source media="(max-width: 400px)" srcset="images/home/indexHero-400.jpg">
+                <source media="(max-width: 600px)" srcset="images/home/indexHero-600.jpg">
+                <img src="images/home/indexHero-1100.jpg" alt="hero image" id="indexHeroImage">
+            </picture>
+            <div class="heroText">
+                <h1>Scoots Moto Rental</h1>
+                <h2>Enjoy Cozumel Freely</h2>
+            </div>
+            <div class="heroAction">
+                <button>
+                    Rent Now!
+                </button>
             </div>
         </div>
+    </div>
     <main>
         <br>
-        <section>
-            <h2 id="rentalOptions">Our Rental Options:</h2>
-            <div  class="indexSummary">
+        <section class="sectLeft">
+            <h2 class="sectionTitle">Our Rental Options:</h2>
+            <div class="indexSummary">
                 <div class="scooterHomeBan">
                     <h3 class="h3Chango">Scooters</h3>
                     <img src="images/home/honda-scooter.jpg" alt="Scooters Banner">
@@ -82,31 +83,45 @@
                 </div>
             </div>
         </section>
-    
-    <h2> 3 Day Forecast for Cozumel</h2>    
-    <section class="weatherForecast">
-        <div>
-            <h5 class="forecastDayName" id="forecastDay1"></h5>
-            <img src="images/common/1px-placeholder.png" alt="" id="forecastIcon1">
-            <p><span id="max1" class="max"></span>&deg;F</p>
-            <!-- <p><span id="min1" class="min"></span>&deg;F</p> -->
-        </div>
-        <div>
-            <h5 class="forecastDayName" id="forecastDay2"></h5>
-            <img src="images/common/1px-placeholder.png" alt="" id="forecastIcon2">
-            <p><span id="max2" class="max"></span>&deg;F</p>
-            <!-- <p><span id="min2" class="min"></span>&deg;F</p> -->
-        </div>
-        <div>
-            <h5 class="forecastDayName" id="forecastDay3"></h5>
-            <img src="images/common/1px-placeholder.png" alt="" id="forecastIcon3">
-            <p><span id="max3" class="max"></span>&deg;F</p>
-            <!-- <p><span id="min3" class="min"></span>&deg;F</p> -->
-        </div>
-    </section>
+        <br>
+        <section class="sectRight">
+            <h2 class="sectionTitle"> 3 Day Forecast for Cozumel</h2>
+            <div class="weatherForecast">
+                <div>
+                    <h5 class="forecastDayName" id="forecastDay1"></h5>
+                    <img src="images/common/1px-placeholder.png" alt="" id="forecastIcon1">
+                    <p><span id="max1" class="max"></span>&deg;F</p>
+                    <!-- <p><span id="min1" class="min"></span>&deg;F</p> -->
+                </div>
+                <div>
+                    <h5 class="forecastDayName" id="forecastDay2"></h5>
+                    <img src="images/common/1px-placeholder.png" alt="" id="forecastIcon2">
+                    <p><span id="max2" class="max"></span>&deg;F</p>
+                    <!-- <p><span id="min2" class="min"></span>&deg;F</p> -->
+                </div>
+                <div>
+                    <h5 class="forecastDayName" id="forecastDay3"></h5>
+                    <img src="images/common/1px-placeholder.png" alt="" id="forecastIcon3">
+                    <p><span id="max3" class="max"></span>&deg;F</p>
+                    <!-- <p><span id="min3" class="min"></span>&deg;F</p> -->
+                </div>
+            </div>
+            <p id="weatherDisclaimer">Weather information provided by OpenWeatherMap.org</p>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer>
+        <!-- <img src="images/common/scoots-logo.png" alt="Scoots Logo"> -->
+        <div class="location">
+            <div class="locationOne"></div>
+            <div class="locationTwo"></div>
+            <div class="phoneInfo"></div>
+            <div class="socialMedia"></div>
+        </div>
+        <div class="map">
+
+        </div>
+    </footer>
 
     <script src="js/responsiveMenu.js"></script>
     <script src="js/weatherData.js"></script>

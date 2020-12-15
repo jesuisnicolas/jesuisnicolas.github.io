@@ -104,7 +104,9 @@ body main{
     margin: auto 2%;
 }
 
-
+.sectionTitle{
+    margin-left: 2%;
+}
 // SUMMARY //
 .indexSummary{
     display: block;
@@ -157,17 +159,23 @@ body main{
 .weatherForecast{
     display: flex;
     justify-content: center;
+    margin-bottom: 1.2rem;
     div{
         display: flex;
         flex-direction: column;
         border: 2px solid $red-pigment;
         border-radius: 7px;
-        margin: auto 5%;
+        margin: auto 2%;
         text-align: center;
-        // h5{}
+        width: 120px;
         img{
-            max-width: 70px;
+            margin: auto;
+            max-width: 70   px;
         }
         // p{}
     }
+}
+#weatherDisclaimer{
+    font-size: 0.7rem;
+    text-align: center;
 }

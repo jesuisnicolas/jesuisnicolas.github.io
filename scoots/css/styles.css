@@ -186,7 +186,7 @@ body {
 }
 
 header {
-  background: linear-gradient(180deg, #004775 0%, #0062a3 32%, #00d4ff 100%);
+  background: linear-gradient(0deg, #004775 0%, #0062a3 32%, #00d4ff 100%);
 }
 
 header #logoDiv {
@@ -281,6 +281,10 @@ body main {
   margin: auto 2%;
 }
 
+.sectionTitle {
+  margin-left: 2%;
+}
+
 .indexSummary {
   display: block;
   width: 100%;
@@ -321,6 +325,7 @@ body main {
 .weatherForecast {
   display: flex;
   justify-content: center;
+  margin-bottom: 1.2rem;
 }
 
 .weatherForecast div {
@@ -328,12 +333,19 @@ body main {
   flex-direction: column;
   border: 2px solid #e70e19;
   border-radius: 7px;
-  margin: auto 5%;
+  margin: auto 2%;
   text-align: center;
+  width: 120px;
 }
 
 .weatherForecast div img {
-  max-width: 70px;
+  margin: auto;
+  max-width: 70   px;
+}
+
+#weatherDisclaimer {
+  font-size: 0.7rem;
+  text-align: center;
 }
 
 @media only screen and (min-width: 600px) {
@@ -395,7 +407,8 @@ body main {
     margin: 0 auto;
   }
   nav ul li {
-    border: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-top: none;
     display: block;
     margin: auto 1rem;
     border-radius: 0 0 .5rem .5rem;
@@ -438,6 +451,18 @@ body main {
   .indexSummary {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .sectLeft {
+    border: 2px solid rgba(0, 71, 117, 0.4);
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    background: linear-gradient(90deg, rgba(0, 71, 117, 0) 0%, rgba(0, 98, 163, 0) 32%, rgba(250, 225, 0, 0.168505) 100%);
+  }
+  .sectRight {
+    border: 2px solid rgba(0, 71, 117, 0.4);
+    border-right: none;
+    border-radius: 20px 0px 0px 20px;
+    background: linear-gradient(260deg, rgba(0, 71, 117, 0) 0%, rgba(0, 98, 163, 0) 32%, rgba(250, 225, 0, 0.168505) 100%);
   }
 }
 

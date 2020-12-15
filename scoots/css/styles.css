@@ -183,10 +183,19 @@ body {
   background-color: #dddbdb;
   margin: 0 auto;
   font-family: "Dosis", sans-serif;
+  color: #000042;
+}
+
+h1 {
+  font-family: "Chango", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
-  background: linear-gradient(0deg, #004775 0%, #0062a3 32%, #00d4ff 100%);
+  background: #004775;
 }
 
 header #logoDiv {
@@ -268,12 +277,42 @@ nav ul li:first-child {
 .hero .heroText {
   grid-column: 1;
   grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: rgba(217, 212, 209, 0.9);
+  text-shadow: 3px 3px 5px black;
+}
+
+.hero .heroText h1 {
+  font-size: 4.2rem;
+  margin-bottom: 0;
+}
+
+.hero .heroText h2 {
+  font-size: 1.8rem;
+  margin-top: 5px;
 }
 
 .hero .heroAction {
   grid-column: 1;
   grid-row: 2 / 3;
   justify-self: center;
+  background: #004775;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+}
+
+.hero .heroAction:hover {
+  background-color: #0062a3;
+}
+
+.hero .heroAction a {
+  color: #d9d4d1;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  margin: 0;
 }
 
 body main {
@@ -289,21 +328,66 @@ body main {
   width: 100%;
 }
 
-.indexSummary div {
+.indexSummary .homeBan {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.indexSummary div h3 {
+.indexSummary .homeBan .homeBanText {
   grid-column: 1 / 3;
   grid-row: 1;
   z-index: 2;
-  margin: 15%;
+  margin: 8% 0 0 15%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+
+.indexSummary .homeBan .homeBanText h3 {
+  font-family: Dosis;
+  font-weight: 800;
+  font-size: 3rem;
+  margin: 0px;
+}
+
+.indexSummary .homeBan .homeBanText p {
+  margin: 0;
   font-size: 2rem;
 }
 
-.indexSummary div img {
+.indexSummary .homeBan .gotoRental {
+  grid-area: 3;
+  grid-column: 2 / 4;
+  justify-self: end;
+  align-self: center;
+  z-index: 1;
+  background-color: #d9d4d1;
+  margin-right: 15%;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 10px;
+}
+
+.indexSummary .homeBan .gotoRental:hover {
+  background-color: #a5a09e;
+}
+
+.indexSummary .homeBan .gotoRental a {
+  color: #2e5eff;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+}
+
+.indexSummary .homeBan .gotoRental a:hover {
+  color: white;
+}
+
+.indexSummary .homeBan img {
   grid-area: 1 / 1 / 4 / 4;
   width: 95%;
   margin: 3% auto;
@@ -312,7 +396,7 @@ body main {
   z-index: 0;
 }
 
-.indexSummary div img:hover {
+.indexSummary .homeBan img:hover {
   width: 97%;
   margin: 1% auto;
 }
@@ -321,43 +405,62 @@ body main {
   font-family: "Chango", sans-serif;
 }
 
-.weatherBox {
-  display: flex;
-  flex-direction: row;
-  border: 2px solid black;
-  margin: 1rem;
+#weatherSmallSection {
+  border: 1px solid rgba(158, 154, 151, 0.5);
   border-radius: .5rem;
+  margin: 1rem 2%;
 }
 
-.weatherBox div {
+#weatherSmallSection h2 {
+  margin-top: 0.5rem;
+}
+
+#weatherSmallSection .weatherBox {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 2%;
+}
+
+#weatherSmallSection .weatherBox div {
   margin: auto 0;
 }
 
-.weatherBox div img {
+#weatherSmallSection .weatherBox div img {
   width: 70px;
 }
 
-.weatherBox .weatherBottomData {
+#weatherSmallSection .weatherBox .weatherBottomData {
   margin-left: .5rem;
 }
 
-.weatherBox .weatherBottomData p {
+#weatherSmallSection .weatherBox .weatherBottomData p {
   margin-bottom: 0;
   margin-top: 0.2rem;
   margin-right: 1rem;
 }
 
-.weatherSmall {
+#weatherSmallSection .weatherSmall {
   margin: 1rem 2%;
 }
 
-.weatherForecast {
+.sectRight {
+  margin-bottom: 2rem;
+  border: 1px solid rgba(158, 154, 151, 0.5);
+  border-radius: 10px;
+  margin: auto 2%;
+}
+
+.sectRight h2 {
+  margin-top: .5rem;
+}
+
+.sectRight .weatherForecast {
   display: flex;
   justify-content: center;
   margin-bottom: 1.2rem;
 }
 
-.weatherForecast div {
+.sectRight .weatherForecast div {
   display: flex;
   flex-direction: column;
   border: 2px solid #e70e19;
@@ -367,7 +470,7 @@ body main {
   width: 120px;
 }
 
-.weatherForecast div img {
+.sectRight .weatherForecast div img {
   margin: auto;
   max-width: 70   px;
 }
@@ -386,6 +489,7 @@ footer img {
   display: block;
   max-width: 150px;
   margin: 10px auto 0 auto;
+  padding-top: 10px;
 }
 
 footer .footerBoxes {
@@ -538,7 +642,7 @@ a {
     grid-row: 1 / 3;
     grid-column: 1 / 2;
     z-index: 0;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr .1fr 1fr;
     grid-template-rows: 1fr 1.5fr 1fr;
   }
   .hero .indexHeroImg {
@@ -548,10 +652,22 @@ a {
   .hero .heroText {
     grid-column: 1/3;
     grid-row: 2;
+    align-self: center;
+  }
+  .hero .heroText h1 {
+    font-size: 5.5rem;
+    margin-bottom: 0;
+    margin-top: -5%;
+  }
+  .hero .heroText h2 {
+    font-size: 2.8rem;
+    margin-top: 5px;
+    margin-bottom: 0;
   }
   .hero .heroAction {
     grid-column: 3/4;
     grid-row: 2;
+    box-shadow: -3px 3px 6px white;
   }
   .indexSummary {
     display: grid;

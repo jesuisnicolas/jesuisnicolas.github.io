@@ -7,7 +7,7 @@
     <meta name="description" content="Landing page for the Scoots Moto Rental
     website. The best moto rental in Cozumel">
 
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.gif">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chango&family=Dosis:wght@400;600;700&display=swap"
         rel="stylesheet">
@@ -19,7 +19,7 @@
 <body>
     <header>
         <div id="logoDiv">
-            <img src="images/common/scoots-logo.png" alt="Scoots' Logo">
+            <img src="images/common/scoots-logo-01.svg" alt="Scoots' Logo">
         </div>
         <div class="weatherBox" id="weatherBig">
             <div>
@@ -54,13 +54,11 @@
                 <img src="images/home/indexHero-1100.jpg" alt="hero image" id="indexHeroImage">
             </picture>
             <div class="heroText">
-                <h1>Scoots Moto Rental</h1>
-                <h2>Enjoy Cozumel Freely</h2>
+                <h1>Scoots</h1>
+                <h2>Enjoy Cozumel</h2>
             </div>
             <div class="heroAction">
-                <button>
-                    Rent Now!
-                </button>
+                <a href="reservations.html">Rent Now!</a>
             </div>
         </div>
     </div>
@@ -69,16 +67,34 @@
         <section class="sectLeft">
             <h2 class="sectionTitle">Our Rental Options:</h2>
             <div class="indexSummary">
-                <div class="scooterHomeBan">
-                    <h3 class="h3Chango">Scooters</h3>
+                <div class="homeBan">
+                    <div class="homeBanText">
+                        <h3>Scooters</h3>
+                        <p>Starting at $20</p>
+                    </div>
+                    <div class="gotoRental">
+                        <a href="rentals.html">Go to Rentals</a>
+                    </div>
                     <img src="images/home/honda-scooter.jpg" alt="Scooters Banner">
                 </div>
-                <div class="atvHomeBan">
-                    <h3 class="h3Chango">ATVs</h3>
+                <div class="homeBan">
+                    <div class="homeBanText">
+                        <h3>ATVs</h3>
+                        <p>Starting at $50</p>
+                    </div>
+                    <div class="gotoRental">
+                        <a href="rentals.html">Go to Rentals</a>
+                    </div>
                     <img src="images/home/honda-atv.jpg" alt="ATVs Banner">
                 </div>
-                <div class="jeepHomeBan">
-                    <h3 class="h3Chango">Jeeps</h3>
+                <div class="homeBan">
+                    <div class="homeBanText">
+                        <h3>Jeeps</h3>
+                        <p>Starting at $60</p>
+                    </div>
+                    <div class="gotoRental">
+                        <a href="rentals.html">Go to Rentals</a>
+                    </div>
                     <img src="images/home/jeep-wrangler.jpg" alt="Jeep Banner">
                 </div>
             </div>
@@ -94,7 +110,7 @@
                     <p>Current Condition:</p>
                     <p><span id="weatherBottomCondition"></span></p>
                     <p>Temp:<span id="weatherBottomTemp"></span>&deg;C | Humidity: <span
-                            id="weatherTopHumidity"></span>%</p>
+                            id="weatherBottomHumidity"></span>%</p>
                     <!-- <p><span id="weatherTopHumidity"></span>&percnt;</p> -->
                 </div>
             </div>
@@ -104,7 +120,7 @@
             <div class="weatherForecast">
                 <div>
                     <h5 class="forecastDayName" id="forecastDay1"></h5>
-                    <img src="images/common/10px-placeholder.png" alt="" id="forecastIcon1">
+                    <img src="images/common/1px-placeholder.png" alt="" id="forecastIcon1">
                     <p><span id="max1" class="max"></span>&deg;C</p>
                     <!-- <p><span id="min1" class="min"></span>&deg;F</p> -->
                 </div>
@@ -126,7 +142,7 @@
     </main>
 
     <footer>
-        <img src="images/common/scoots-logo.png" alt="Scoots Logo">
+        <img src="images/common/scoots-logo-01.svg" alt="Scoots Logo">
         <div class="footerBoxes">
             <div class="location">
                 <h4>Our Locations:</h4>

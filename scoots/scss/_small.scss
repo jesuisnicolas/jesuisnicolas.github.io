@@ -8,13 +8,22 @@ body{
     // font-family: "Ubuntu", sans-serif;
     margin: 0 auto;
     font-family: "Dosis", sans-serif;
+    color: #000042;
+}
+
+h1{
+    font-family: "Chango", sans-serif;
+}
+
+a{
+    text-decoration: none;
 }
 
 
 ////// HEADER //////
 
 header{
-    background: $headerGradient;
+    background: $indigo-dye;
     #logoDiv{
         margin: auto 2%;
         padding: 2%;
@@ -90,11 +99,37 @@ nav ul{
     .heroText{
         grid-column: 1;
         grid-row: 1 / 2;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: rgba(217, 212, 209, .9);
+        text-shadow: 3px 3px 5px black;
+        h1{
+            font-size: 4.2rem;
+            margin-bottom: 0;
+        }
+        h2{
+            font-size: 1.8rem;
+            margin-top: 5px;
+        }
     }
     .heroAction{
         grid-column: 1;
         grid-row: 2 / 3;
-        justify-self: center;;
+        justify-self: center;
+        background: $indigo-dye;
+        padding: 2rem 1rem;
+        border-radius: 10px;
+        &:hover{
+            background-color: $sapphire-blue;
+        }
+        a{
+            color: $timberwolf;
+            font-weight: 600;
+            font-size: 2rem;
+            padding: 2rem 1rem;
+            margin: 0;
+        }
     }
 }
 
@@ -110,17 +145,56 @@ body main{
 .indexSummary{
     display: block;
     width: 100%;
-    div{
+    .homeBan{
         // grid-row: 1;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        h3{
+        .homeBanText{
             grid-column: 1 / 3;
             grid-row: 1;
             z-index: 2;
-            margin: 15%;
+            margin: 8% 0 0 15%;
             font-size: 2rem;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            text-shadow: $textShadow;
+            h3{
+                font-family: Dosis;
+                font-weight: 800;
+                font-size: 3rem;
+                margin: 0px;
+            }
+            p{
+                margin: 0;
+                font-size: 2rem;
+            }
+        }
+        .gotoRental{
+            grid-area: 3;
+            grid-column: 2 / 4;
+            justify-self: end;
+            align-self: center;
+            z-index: 1;
+            background-color: $timberwolf;
+            margin-right: 15%;
+            text-align: center;
+            padding: 1rem 0;
+            border-radius: 10px;
+            &:hover{
+                background-color: rgb(165, 160, 158);
+            }
+            a{
+                color: $ultramarine-blue;
+                text-decoration: none;
+                font-weight: 800;
+                font-size:1.5rem;
+                padding: 1rem .5rem;
+                &:hover{
+                    color: white;
+                }
+            }
         }
         img{
             grid-area: 1 / 1 / 4 / 4;
@@ -154,49 +228,65 @@ body main{
 }
 
 // FORECAST //
-
-.weatherBox{ //Weather Box Flex Setup
-    display: flex;
-    flex-direction: row;
-    border: 2px solid black;
-    margin: 1rem;
+#weatherSmallSection{
+    border: 1px solid $sectionBoxes;
     border-radius: .5rem;
-    div{
-        margin: auto 0;
-        img{
-            width: 70px        
-        }
-    }   
-    .weatherBottomData{
-        margin-left: .5rem;
-        p{
-            margin-bottom: 0;
-            margin-top: 0.2rem;
-            margin-right: 1rem;
+    margin: 1rem 2%;
+    h2{
+        margin-top: 0.5rem;
+    }
+    .weatherBox{ //Weather Box Flex Setup
+        display: flex;
+        flex-direction: row;
+        
+        margin: 1rem 2%;
+        
+        div{
+            margin: auto 0;
+            img{
+                width: 70px        
+            }
+        }   
+        .weatherBottomData{
+            margin-left: .5rem;
+            p{
+                margin-bottom: 0;
+                margin-top: 0.2rem;
+                margin-right: 1rem;
+            }
         }
     }
-}
-.weatherSmall{
-    margin: 1rem 2%;
+    .weatherSmall{
+        margin: 1rem 2%;
+    }
 }
 
-.weatherForecast{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.2rem;
-    div{
+.sectRight{
+    margin-bottom: 2rem;
+    border: 1px solid $sectionBoxes;
+    border-radius: 10px;
+    margin: auto 2%;
+    h2{
+        margin-top: .5rem;
+    }
+    .weatherForecast{
         display: flex;
-        flex-direction: column;
-        border: 2px solid $red-pigment;
-        border-radius: 7px;
-        margin: auto 2%;
-        text-align: center;
-        width: 120px;
-        img{
-            margin: auto;
-            max-width: 70   px;
+        justify-content: center;
+        margin-bottom: 1.2rem;
+        div{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid $red-pigment;
+            border-radius: 7px;
+            margin: auto 2%;
+            text-align: center;
+            width: 120px;
+            img{
+                margin: auto;
+                max-width: 70   px;
+            }
+            // p{}
         }
-        // p{}
     }
 }
 #weatherDisclaimer{
@@ -213,6 +303,7 @@ footer{
         display: block;
         max-width: 150px;
         margin: 10px auto 0 auto;
+        padding-top: 10px;
     }
     .footerBoxes{
         display: grid;

@@ -21,7 +21,7 @@
         <div id="logoDiv">
             <img src="images/common/scoots-logo.png" alt="Scoots' Logo">
         </div>
-        <div class="weatherBox">
+        <div class="weatherBox" id="weatherBig">
             <div>
                 <img id="weatherTopIcon" src="" alt="">
             </div>
@@ -84,25 +84,40 @@
             </div>
         </section>
         <br>
+        <section id="weatherSmallSection">
+            <h2 class="sectionTitle">Current Weather</h2>
+            <div class="weatherBox" id="weatherSmall">
+                <div>
+                    <img id="weatherBottomIcon" src="" alt="">
+                </div>
+                <div class="weatherBottomData">
+                    <p>Current Condition:</p>
+                    <p><span id="weatherBottomCondition"></span></p>
+                    <p>Temp:<span id="weatherBottomTemp"></span>&deg;C | Humidity: <span
+                            id="weatherTopHumidity"></span>%</p>
+                    <!-- <p><span id="weatherTopHumidity"></span>&percnt;</p> -->
+                </div>
+            </div>
+        </section>
         <section class="sectRight">
-            <h2 class="sectionTitle"> 3 Day Forecast for Cozumel</h2>
+            <h2 class="sectionTitle"> 3 Day Forecast</h2>
             <div class="weatherForecast">
                 <div>
                     <h5 class="forecastDayName" id="forecastDay1"></h5>
-                    <img src="images/common/1px-placeholder.png" alt="" id="forecastIcon1">
-                    <p><span id="max1" class="max"></span>&deg;F</p>
+                    <img src="images/common/10px-placeholder.png" alt="" id="forecastIcon1">
+                    <p><span id="max1" class="max"></span>&deg;C</p>
                     <!-- <p><span id="min1" class="min"></span>&deg;F</p> -->
                 </div>
                 <div>
                     <h5 class="forecastDayName" id="forecastDay2"></h5>
                     <img src="images/common/1px-placeholder.png" alt="" id="forecastIcon2">
-                    <p><span id="max2" class="max"></span>&deg;F</p>
+                    <p><span id="max2" class="max"></span>&deg;C</p>
                     <!-- <p><span id="min2" class="min"></span>&deg;F</p> -->
                 </div>
                 <div>
                     <h5 class="forecastDayName" id="forecastDay3"></h5>
                     <img src="images/common/1px-placeholder.png" alt="" id="forecastIcon3">
-                    <p><span id="max3" class="max"></span>&deg;F</p>
+                    <p><span id="max3" class="max"></span>&deg;C</p>
                     <!-- <p><span id="min3" class="min"></span>&deg;F</p> -->
                 </div>
             </div>
@@ -111,20 +126,43 @@
     </main>
 
     <footer>
-        <!-- <img src="images/common/scoots-logo.png" alt="Scoots Logo"> -->
-        <div class="location">
-            <div class="locationOne"></div>
-            <div class="locationTwo"></div>
-            <div class="phoneInfo"></div>
-            <div class="socialMedia"></div>
-        </div>
-        <div class="map">
-
+        <img src="images/common/scoots-logo.png" alt="Scoots Logo">
+        <div class="footerBoxes">
+            <div class="location">
+                <h4>Our Locations:</h4>
+                <div class="locations">
+                    <p>Carretera Costera Sur,
+                        77600 San Miguel de Cozumel, Q.R., México</p>
+                    <p>&#9742;<a href="tel:+52987688511"> +52 98 7688 5137</a></p>
+                </div>
+                <br>
+                <div class="locations">
+                    <p>Av Lic Benito Juárez 725A,
+                        10 de Abril, San Miguel de Cozumel, Q.R., México</p>
+                    <p>&#9742;<a href="tel:+52987688511"> +52 98 7688 5111</a></p>
+                </div>
+                <div class="socialMedia">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src="images/common/Instagram.png" alt="Instagram Logo"></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/common/f_logo_RGB-Blue_72.png" alt="Facebook Logo"></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src="images/common/Twitter.png" alt="Twitter Logo"></a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8973.819584532393!2d-86.94709100305963!3d20.49815841333676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59042035f90f%3A0xbe466457b79a1885!2sAgua%20de%20mar!5e1!3m2!1ses!2sar!4v1608052035598!5m2!1ses!2sar"
+                    width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <div class="footerLegal">
+                <p>&copy; <span id="copyYear"></span> | Scoots Moto Rental | Website Design: Nicolas Schaberger</p>
+                <p>Last Updated: <span id="lastUpdated"></span></p>
+            </div>
         </div>
     </footer>
 
     <script src="js/responsiveMenu.js"></script>
     <script src="js/weatherData.js"></script>
+    <script src="js/lastModified.js"></script>
 </body>
 
 </html>

@@ -45,6 +45,11 @@ fetch(forecastAPI)
     document.getElementById("weatherTopCondition").innerHTML=current_condition;
     document.getElementById("weatherTopTemp").innerHTML=current_temp;
     document.getElementById("weatherTopHumidity").innerHTML=current_humidity;
+
+    document.getElementById("weatherBottomIcon").src=iconpath;
+    document.getElementById("weatherBottomCondition").innerHTML=current_condition;
+    document.getElementById("weatherBottomTemp").innerHTML=current_temp;
+    document.getElementById("weatherBottomHumidity").innerHTML=current_humidity;
 })
 
 function unixToDate(dt){

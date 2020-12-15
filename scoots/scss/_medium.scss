@@ -21,8 +21,14 @@ header{ //Header Grid organization
         justify-self: end;
     }
 }
-
-.weatherBox{ //Weather Box Flex Setup
+#weatherSmall{
+    display: none;
+}
+#weatherSmallSection{
+    display: none;
+}
+#weatherBig{ //Weather Box Flex Setup
+    background-color: rgba(255, 255, 255, 0.4);
     display: flex;
     flex-direction: row;
     border: 2px solid black;
@@ -111,24 +117,47 @@ nav ul {
 }
 
 ////// MAIN //////
-main{
-    max-width: 860px;
-}
 
 .indexSummary{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.sectLeft{
-    border: 2px solid rgba(0, 71, 117, .4);
-    border-left: none;
-    border-radius: 0 20px 20px 0;
-    background: $sectionLeftBackground;
-}
-.sectRight{
-    border: 2px solid rgba(0, 71, 117, .4);
-    border-right: none;
-    border-radius: 20px 0px 0px 20px;
-    background: $sectionRightBackground;
+// .sectLeft{
+//     border: 2px solid rgba(0, 71, 117, .4);
+//     border-left: none;
+//     border-radius: 0 20px 20px 0;
+//     background: $sectionLeftBackground;
+// }
+// .sectRight{
+//     border: 2px solid rgba(0, 71, 117, .4);
+//     border-right: none;
+//     border-radius: 20px 0px 0px 20px;
+//     background: $sectionRightBackground;
+// }
+
+////// FOOTER //////
+
+footer .footerBoxes{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1 auto;
+    column-gap: 2.5rem;
+    .location{
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+    .map{
+        grid-column: 2 / 3;
+        grid-row: 2;
+        align-self: center;
+        justify-self: center;
+        iframe{
+            max-width: 100%;
+        }
+    }
+    .footerLegal{
+        grid-column: 1 / 3;
+        grid-row: 3;
+    }
+
 }

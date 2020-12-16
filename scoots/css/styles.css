@@ -672,7 +672,7 @@ footer .footerBoxes .location {
 
 footer .footerBoxes .location #locationsTitle {
   font-size: 2rem;
-  margin: 0.6rem;
+  margin: 1rem 0.6rem;
   font-weight: 600;
 }
 
@@ -1049,7 +1049,7 @@ form label.top textarea {
   header {
     display: grid;
     grid-template-columns: 1.2fr 1fr 2fr;
-    grid-template-rows: 1;
+    grid-template-rows: 1fr;
   }
   header div {
     grid-column: 1 / 2;
@@ -1090,7 +1090,7 @@ form label.top textarea {
   .navAndHero {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2;
+    grid-template-rows: 2fr;
     margin-top: 0;
   }
   nav {
@@ -1163,7 +1163,7 @@ form label.top textarea {
   }
   footer .footerBoxes {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1 auto;
+    grid-template-rows: 1fr auto;
     column-gap: 2.5rem;
   }
   footer .footerBoxes .location {

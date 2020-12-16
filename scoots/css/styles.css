@@ -315,6 +315,10 @@ nav ul li:first-child {
   margin: 0;
 }
 
+.hero .heroAction a:hover {
+  color: white;
+}
+
 body main {
   margin: auto 2%;
 }
@@ -406,7 +410,7 @@ body main {
 }
 
 #weatherSmallSection {
-  border: 1px solid rgba(158, 154, 151, 0.5);
+  border: 1px solid rgba(158, 154, 151, 0.3);
   border-radius: .5rem;
   margin: 1rem 2%;
 }
@@ -445,7 +449,7 @@ body main {
 
 .sectRight {
   margin-bottom: 2rem;
-  border: 1px solid rgba(158, 154, 151, 0.5);
+  border: 1px solid rgba(158, 154, 151, 0.3);
   border-radius: 10px;
   margin: auto 2%;
 }
@@ -549,12 +553,159 @@ footer .footerBoxes .footerLegal {
   font-size: 0.8rem;
 }
 
-a {
-  cursor: pointer;
+.rentalsCards {
+  display: block;
+  width: 100%;
+}
+
+.rentalsCards .homeBan {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.rentalsCards .homeBan .homeBanText {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  z-index: 2;
+  margin: 8% 0 0 8%;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+}
+
+.rentalsCards .homeBan .homeBanText h3 {
+  font-family: Dosis;
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 0px;
+}
+
+.rentalsCards .homeBan .homeBanText p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.rentalsCards .homeBan .gotoRental {
+  grid-row: 2;
+  grid-column: 2 / 4;
+  justify-self: end;
+  align-self: center;
+  z-index: 1;
+  background-color: #d9d4d1;
+  margin-right: 15%;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 10px;
+}
+
+.rentalsCards .homeBan .gotoRental:hover {
+  background-color: #a5a09e;
+}
+
+.rentalsCards .homeBan .gotoRental a {
+  color: #2e5eff;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+}
+
+.rentalsCards .homeBan .gotoRental a:hover {
+  color: white;
+}
+
+.rentalsCards .homeBan img {
+  grid-area: 1 / 1 / 4 / 4;
+  width: 95%;
+  margin: 3% auto;
+  border-radius: 10px;
+  transition: 200ms linear;
+  z-index: 0;
+}
+
+.rentalsCards .homeBan img:hover {
+  width: 97%;
+  margin: 1% auto;
+}
+
+:root {
+  --odd-row: #e7f0ed;
+  --even-row: #e7ffed;
+  --header: #628ca6;
+  --title: #7fb9c2;
+}
+
+section#rentalPrices h2 {
+  display: none;
+}
+
+section#rentalPrices table {
+  margin: 30px auto;
+}
+
+table, caption {
+  box-shadow: 5px 10px 10px var(--header);
+}
+
+caption {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: black;
+  background-color: var(--title);
+  padding: 0.5rem;
+}
+
+table {
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+}
+
+table thead th {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+table tr {
+  background-color: var(--odd-row);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--even-row);
+}
+
+table tr th {
+  color: white;
+  background-color: var(--header);
+  font-size: 1.2rem;
+}
+
+table tr .price {
+  text-align: right;
+  word-wrap: normal;
+}
+
+tr td,
+th {
+  padding: .3rem;
+}
+
+tfoot tr {
+  background-color: var(--title);
+  font-size: 0.8rem;
+}
+
+table,
+td,
+th {
+  border: 1px solid #c4c4c4;
+  border-collapse: collapse;
 }
 
 @media only screen and (min-width: 600px) {
-  main {
+  body main {
     max-width: 800px;
     margin: 0 auto;
   }
@@ -695,6 +846,19 @@ a {
     grid-column: 1 / 3;
     grid-row: 3;
   }
+  .rentalsCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .scooters h2, .atvs h2, .jeeps h2 {
+    margin-left: 3%;
+  }
+  .homeBanText h3 {
+    font-size: .5rem;
+  }
+  .rentalsH1 {
+    margin-left: 3%;
+  }
 }
 
 /* end of media query */
@@ -739,6 +903,9 @@ a {
   }
   footer .footerBoxes .map iframe {
     max-width: 100%;
+  }
+  .rentalsCards {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 

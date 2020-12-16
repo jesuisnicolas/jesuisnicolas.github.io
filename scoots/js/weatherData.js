@@ -16,23 +16,6 @@ fetch(forecastAPI)
     let forecastDayNumber = hoy;
     let dayBox = 1;
 
-    for (i=0; i < 3; i++){
-        
-        let time = unixToDate(mylist[i].dt);
-        if (time.includes("14:00:00")){
-            forecastDayNumber += 1;
-            if (forecastDayNumber===7){
-                forecastDayNumber = 0
-            }
-            var iconcode = mylist[i].weather[0].icon;
-            var iconpath2 = "https://openweathermap.org/img/w/" + iconcode + ".png";
-            document.getElementById(`forecastDay${dayBox}`).innerHTML=weekDays[forecastDayNumber];
-            document.getElementById(`max${dayBox}`).innerHTML=mylist[i].temp.day;
-            // document.getElementById(`min${dayBox}`).innerHTML=mylist[i].main.temp_min;
-            document.getElementById(`forecastIcon${dayBox}`).src = iconpath2;
-            dayBox += 1
-        }
-    }
     //Current Weather //
     let current_icon = jsObject.current.weather[0].icon;
     let current_condition = jsObject.current.weather[0].description;
@@ -50,6 +33,25 @@ fetch(forecastAPI)
     document.getElementById("weatherBottomCondition").innerHTML=current_condition;
     document.getElementById("weatherBottomTemp").innerHTML=current_temp;
     document.getElementById("weatherBottomHumidity").innerHTML=current_humidity;
+
+    for (i=0; i < 3; i++){
+        
+        let time = unixToDate(mylist[i].dt);
+        if (time.includes("14:00:00")){
+            forecastDayNumber += 1;
+            if (forecastDayNumber===7){
+                forecastDayNumber = 0
+            }
+            var iconcode = mylist[i].weather[0].icon;
+            var iconpath2 = "https://openweathermap.org/img/w/" + iconcode + ".png";
+            document.getElementById(`forecastDay${dayBox}`).innerHTML=weekDays[forecastDayNumber];
+            document.getElementById(`max${dayBox}`).innerHTML=mylist[i].temp.day;
+            // document.getElementById(`min${dayBox}`).innerHTML=mylist[i].main.temp_min;
+            document.getElementById(`forecastIcon${dayBox}`).src = iconpath2;
+            dayBox += 1
+        }
+    }
+    
 })
 
 function unixToDate(dt){

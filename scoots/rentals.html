@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots Moto Rental | Rentals informartion.
+    The best moto rental in Cozumel">
+    <link rel="shortcut icon" href="favicon.gif">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Dosis:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Rentals | Scoots Moto Rentals</title>
+</head>
+
+<body>
+    <header>
+        <div id="logoDiv">
+            <img src="images/common/scoots-logo-1x.png" alt="Scoots' Logo">
+        </div>
+        <div class="weatherBox" id="weatherBig">
+            <div>
+                <img id="weatherTopIcon" src="" alt="">
+            </div>
+            <div class="weatherTopData">
+                <p>Current Condition:</p>
+                <p><span id="weatherTopCondition"></span></p>
+                <p>Temp:<span id="weatherTopTemp"></span>&deg;C | Humidity: <span id="weatherTopHumidity"></span>%</p>
+                <!-- <p><span id="weatherTopHumidity"></span>&percnt;</p> -->
+            </div>
+        </div>
+    </header>
+
+    <div class="navAndHero">
+        <nav>
+            <ul id="primaryNav" class="primaryNav">
+                <li class="ham"><a href="#">Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <h1 class="rentalsH1">Rentals Information</h1>
+        <br>
+
+        <section class="scooters">
+            <h2>Scooters</h2>
+            <div class="rentalsCards">
+                <div class="homeBan">
+                    <div class="homeBanText">
+                        <h3>Honda Metropolitan</h3>
+                        <p>49cc. 1 Person</p>
+                    </div>
+                    <div class="gotoRental">
+                        <a href="#rentalPrices">View Prices</a>
+                    </div>
+                    <img src="images/rentals/honda-metropolitan.jpg" alt="Scooters Banner">
+                </div>
+                <div class="homeBan">
+                    <div class="homeBanText">
+                        <h3>Honda Dio</h3>
+                        <p>110cc. 2 Person</p>
+                    </div>
+                    <div class="gotoRental">
+                        <a href="#rentalPrices">View Prices</a>
+                    </div>
+                    <img src="images/rentals/honda-dio.jpg" alt="ATVs Banner">
+                </div>
+                <div class="homeBan">
+                    <div class="homeBanText">
+                        <h3>Honda PCX150</h3>
+                        <p>149cc. 2 Person</p>
+                    </div>
+                    <div class="gotoRental">
+                        <a href="#rentalPrices">View Prices</a>
+                    </div>
+                    <img src="images/rentals/honda-pcx150.jpg" alt="Jeep Banner">
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <section class="atvs">
+            <h2>ATVs</h2>
+            <div class="rentalsCards">
+                <div class="homeBan">
+                    <div class="homeBanText">
+                        <h3>Honda Pioneer 1000</h3>
+                        <p>999cc. 4 Person</p>
+                    </div>
+                    <div class="gotoRental">
+                        <a href="#rentalPrices">View Prices</a>
+                    </div>
+                    <img src="images/rentals/honda-pioneer-1000.jpg" alt="Scooters Banner">
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <section class="jeeps">
+            <h2>Jeeps</h2>
+            <div class="rentalsCards">
+                <div class="homeBan">
+                    <div class="homeBanText">
+                        <h3>Jeep Wrangler 4 Door</h3>
+                        <p>Manual - A/C - 5 Person</p>
+                    </div>
+                    <div class="gotoRental">
+                        <a href="#rentalPrices">View Prices</a>
+                    </div>
+                    <img src="images/rentals/jeep-wrangler-4-door.jpg" alt="Scooters Banner">
+                </div>
+                <div class="homeBan">
+                    <div class="homeBanText">
+                        <h3>Jeep Wrangler 2 Door</h3>
+                        <p>Manual - Open - 4 Person</p>
+                    </div>
+                    <div class="gotoRental">
+                        <a href="#rentalPrices">View Prices</a>
+                    </div>
+                    <img src="images/rentals/jeep-wrangler-open-air.jpg" alt="ATVs Banner">
+                </div>
+            </div>
+        </section>
+        <br>
+        <!-- PRICES TABLE -->
+        <section id="rentalPrices">
+            <h2>Rental Prices</h2>
+            <table>
+                <caption>Scoots Moto Rental | All prices include taxes</caption>
+                <thead>
+                    <th colspan="2"></th>
+                    <th colspan="2">Reservation</th>
+                    <th colspan="2">Walk-In</th>
+                </thead>
+                <thead>
+                    <th>Vehicle</th>
+                    <th>Seats</th>
+                    <th>Half Day (3h)</th>
+                    <th>Full Day</th>
+                    <th>Half Day (3h)</th>
+                    <th>Full Day</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Honda Metropolitan</td>
+                        <td>1</td>
+                        <td class="price">$<span id="rent1-1"></span></td>
+                        <td class="price">$<span id="rent1-2"></span></td>
+                        <td class="price">$<span id="rent1-3"></span></td>
+                        <td class="price">$<span id="rent1-4"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td>Honda Dio</td>
+                        <td>2</td>
+                        <td class="price">$<span id="rent2-1"></span></td>
+                        <td class="price">$<span id="rent2-2"></span></td>
+                        <td class="price">$<span id="rent2-3"></span></td>
+                        <td class="price">$<span id="rent2-4"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td>Honda PCX 150</td>
+                        <td>2</td>
+                        <td class="price">$<span id="rent3-1"></span></td>
+                        <td class="price">$<span id="rent3-2"></span></td>
+                        <td class="price">$<span id="rent3-3"></span></td>
+                        <td class="price">$<span id="rent3-4"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td>Honda Pioneer ATV</td>
+                        <td>4</td>
+                        <td class="price">$<span id="rent4-1"></span></td>
+                        <td class="price">$<span id="rent4-2"></span></td>
+                        <td class="price">$<span id="rent4-3"></span></td>
+                        <td class="price">$<span id="rent4-4"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td>Wrangler 4 Door</td>
+                        <td>5</td>
+                        <td class="price">$<span id="rent5-1"></span></td>
+                        <td class="price">$<span id="rent5-2"></span></td>
+                        <td class="price">$<span id="rent5-3"></span></td>
+                        <td class="price">$<span id="rent5-4"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td>Wrangler 2 Door</td>
+                        <td>5</td>
+                        <td class="price">$<span id="rent6-1"></span></td>
+                        <td class="price">$<span id="rent6-2"></span></td>
+                        <td class="price">$<span id="rent6-3"></span></td>
+                        <td class="price">$<span id="rent6-4"></span></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan="6">Prices will be mantained upon reservation.</td>
+                </tfoot>
+            </table>
+
+        </section>
+    </main>
+    
+    <footer>
+        <img src="images/common/scoots-logo-0.5x.png" alt="Scoots Logo">
+        <div class="footerBoxes">
+            <div class="location">
+                <h4>Our Locations:</h4>
+                <div class="locations">
+                    <p>Carretera Costera Sur,
+                        77600 San Miguel de Cozumel, Q.R., México</p>
+                    <p>&#9742;<a href="tel:+52987688511"> +52 98 7688 5137</a></p>
+                </div>
+                <br>
+                <div class="locations">
+                    <p>Av Lic Benito Juárez 725A,
+                        10 de Abril, San Miguel de Cozumel, Q.R., México</p>
+                    <p>&#9742;<a href="tel:+52987688511"> +52 98 7688 5111</a></p>
+                </div>
+                <div class="socialMedia">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img
+                            src="images/common/Instagram.png" alt="Instagram Logo"></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img
+                            src="images/common/f_logo_RGB-Blue_72.png" alt="Facebook Logo"></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img
+                            src="images/common/Twitter.png" alt="Twitter Logo"></a>
+                </div>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8973.819584532393!2d-86.94709100305963!3d20.49815841333676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59042035f90f%3A0xbe466457b79a1885!2sAgua%20de%20mar!5e1!3m2!1ses!2sar!4v1608052035598!5m2!1ses!2sar"
+                    width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <div class="footerLegal">
+                <p>&copy; <span id="copyYear"></span> | Scoots Moto Rental | Website Design: Nicolas Schaberger</p>
+                <p>Last Updated: <span id="lastUpdated"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/responsiveMenu.js"></script>
+    <script src="js/weatherData.js"></script>
+    <script src="js/rentalData.js"></script>
+    <script src="js/lastModified.js"></script>
+</body>
+
+</html>

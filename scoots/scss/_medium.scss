@@ -1,7 +1,7 @@
 @import "variables"; //Temporarily import variables for 
 //autocomplete purposes.
 
-main{
+body main{
     max-width: 800px;
     margin: 0 auto;
 
@@ -136,18 +136,6 @@ nav ul {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-// .sectLeft{
-//     border: 2px solid rgba(0, 71, 117, .4);
-//     border-left: none;
-//     border-radius: 0 20px 20px 0;
-//     background: $sectionLeftBackground;
-// }
-// .sectRight{
-//     border: 2px solid rgba(0, 71, 117, .4);
-//     border-right: none;
-//     border-radius: 20px 0px 0px 20px;
-//     background: $sectionRightBackground;
-// }
 
 ////// FOOTER //////
 
@@ -174,3 +162,26 @@ footer .footerBoxes{
     }
 
 }
+
+////////////////////////////////////////////////////////
+////// RENTALS PAGE //////
+
+.rentalsCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.scooters, .atvs, .jeeps{
+    // border: 2px solid $sectionBoxes;
+    // border-radius: 10px;
+    h2{
+        margin-left: 3%;
+    }
+}
+
+.homeBanText h3{
+    font-size: .5rem;   
+}
+.rentalsH1{
+    margin-left: 3%;
+}
+

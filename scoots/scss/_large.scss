@@ -41,3 +41,7 @@ body main{
 }
 
 footer .footerBoxes .map iframe{max-width: 100%;}
+
+.rentalsCards{
+    grid-template-columns: 1fr 1fr 1fr;
+}

@@ -129,6 +129,9 @@ nav ul{
             font-size: 2rem;
             padding: 2rem 1rem;
             margin: 0;
+            &:hover{
+                color: white;
+            }
         }
     }
 }
@@ -209,20 +212,8 @@ body main{
             }
         }
     }
-    // .atvHomeBan{
-    //     // grid-row: 2;
-    //     display: grid;
-    //     grid-template-columns: 1fr 1fr 1fr;
-    //     grid-template-rows: 1fr 1fr 1fr;
-    // }
-    // .jeepHomeBan{
-    //     // grid-row: 3;
-    //     display: grid;
-    //     grid-template-columns: 1fr 1fr 1fr;
-    //     grid-template-rows: 1fr 1fr 1fr;
-    // }
-}
 
+}
 .h3Chango, h2{                          //Check this!!!!!!!!!!!!
     font-family: "Chango", sans-serif;
 }
@@ -354,6 +345,149 @@ footer{
     }
 }
 
-a{
-    cursor: pointer;
+////////////////////////////////////////////////////////
+////// RENTALS PAGE //////
+
+.rentalsCards{
+    display: block;
+    width: 100%;
+    .homeBan{
+        // grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        .homeBanText{
+            grid-column: 1 / 4;
+            grid-row: 1;
+            z-index: 2;
+            margin: 8% 0 0 8%;
+            font-size: 3rem;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            text-shadow: $textShadow;
+            h3{
+                font-family: Dosis;
+                font-weight: 800;
+                font-size: 2rem;
+                margin: 0px;
+            }
+            p{
+                margin: 0;
+                font-size: 2rem;
+            }
+        }
+        .gotoRental{
+            grid-row: 2;
+            grid-column: 2 / 4;
+            justify-self: end;
+            align-self: center;
+            z-index: 1;
+            background-color: $timberwolf;
+            margin-right: 15%;
+            text-align: center;
+            padding: 1rem 0;
+            border-radius: 10px;
+            &:hover{
+                background-color: rgb(165, 160, 158);
+            }
+            a{
+                color: $ultramarine-blue;
+                text-decoration: none;
+                font-weight: 800;
+                font-size:1.5rem;
+                padding: 1rem .5rem;
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+        img{
+            grid-area: 1 / 1 / 4 / 4;
+            width: 95%;
+            margin: 3% auto;
+            border-radius: 10px;
+            transition: 200ms linear;
+            z-index: 0;
+            &:hover{
+                width: 97%;
+                margin: 1% auto;
+            }
+        }
+    }
+
+}
+
+////// PRICES TABLE //////
+
+:root {
+    --odd-row: #e7f0ed;
+    --even-row: #e7ffed;
+    --header: #628ca6;
+    --title: #7fb9c2;
+}
+
+
+section#rentalPrices{
+    h2{
+        display: none;
+    }
+    table{
+        margin: 30px auto;
+    }
+}
+table, caption{
+    box-shadow: 5px 10px 10px var(--header);
+}
+
+
+caption {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: black;
+    background-color: var(--title);
+    padding: 0.5rem;
+}
+
+table{
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+    thead th{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    tr{
+        background-color: var(--odd-row);
+        &:nth-child(even) {
+            background-color: var(--even-row);
+        } 
+        th {
+            color: white;
+            background-color: var(--header);
+            font-size: 1.2rem;
+        }
+        .price{
+            text-align: right;
+            word-wrap: normal;
+        }
+    }   
+}
+
+
+tr td,
+th {
+    padding: .3rem;
+}
+
+
+tfoot tr {
+    background-color: var(--title);
+    font-size: 0.8rem;
+}
+
+table,
+td,
+th {
+    border: 1px solid rgb(196, 196, 196);
+    border-collapse: collapse;
 }

@@ -4,7 +4,7 @@ document.getElementById("lastUpdated").innerHTML= modDate;
 document.getElementById("copyYear").innerHTML= year.getFullYear();
 
 //Pasive event listener (This came up in the lighthouse report)
-document.addEventListener('touchstart', onTouchStart, {passive: true});
+// document.addEventListener('touchstart', onTouchStart, {passive: true});
 
 // MAP
 

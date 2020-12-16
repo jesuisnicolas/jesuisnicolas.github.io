@@ -531,6 +531,7 @@ form{
         margin: 0 1rem;
         padding: .5rem .5rem;
         border-radius: 10px;
+        font-size: 1.2rem;
     }
     label.top, form div{
         display: block;
@@ -545,7 +546,7 @@ form{
             padding: .75rem;
             color: #555;
             width: 90%;
-            background-color: rgba(0, 0, 0, .1);
+            background-color: white;
             margin-top: 3px;
             -webkit-appearance: none;
         }
@@ -557,7 +558,7 @@ form{
             padding: .75rem;
             color: #555;
             width: 100%;
-            background-color: rgba(0, 0, 0, .1);
+            background-color:white;
             margin-top: 3px;
             -webkit-appearance: none;
         }

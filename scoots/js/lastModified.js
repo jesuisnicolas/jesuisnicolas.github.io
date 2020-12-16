@@ -3,6 +3,9 @@ var year= new Date();
 document.getElementById("lastUpdated").innerHTML= modDate;
 document.getElementById("copyYear").innerHTML= year.getFullYear();
 
+//Pasive event listener (This came up in the lighthouse report)
+document.addEventListener('touchstart', onTouchStart, {passive: true});
+
 // MAP
 
 // Av. Rafael E. Melgar, Centro, 77600 San Miguel de Cozumel, Q.R., México

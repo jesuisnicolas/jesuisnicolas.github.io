@@ -653,8 +653,8 @@ table, caption {
 caption {
   font-size: 1.7rem;
   font-weight: bold;
-  color: black;
-  background-color: var(--title);
+  color: white;
+  background-color: #0062a3;
   padding: 0.5rem;
 }
 
@@ -678,7 +678,7 @@ table tr:nth-child(even) {
 
 table tr th {
   color: white;
-  background-color: var(--header);
+  background-color: #004775;
   font-size: 1.2rem;
 }
 
@@ -693,8 +693,9 @@ th {
 }
 
 tfoot tr {
-  background-color: var(--title);
+  background-color: #0062a3;
   font-size: 0.8rem;
+  color: white;
 }
 
 table,

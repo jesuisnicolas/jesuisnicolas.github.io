@@ -193,4 +193,32 @@ footer .footerBoxes{
 ////// RESERVATIONS //////
 
 
+///////////////////////////////////////////
+////// Tours //////
+article p{
+    font-size: 1.2rem;
+}
+.tourOptions article .floatL{
+    float: left;
+    width: 250px;
+    margin: .3rem 1.2rem .3rem;
+    img{
+        float: left;
+    }
+}
 
+.tourOptions article .floatR{
+    float: right;
+    width: 250px;
+    margin: .3rem 1.2rem .3rem;
+    img{
+        float: right;
+    }
+}
+.tourOptions article figure.wide{
+    margin: 0 auto 1rem;
+    width: 96%;
+    img{
+        width: 100%;
+    }
+}

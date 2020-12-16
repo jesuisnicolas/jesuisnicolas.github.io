@@ -332,7 +332,7 @@
             </fieldset>
             <label class="sbs" id="agreement">
                 <input type="radio" name="agreement" value="yes" required> I have read all
-                    the <a href="rentals.html#requeriment" target="_blank">information and requeriments</a>
+                    the <a href="rentals.html#requirement" target="_blank">information and requirements</a>
             </label>
             <input class="submitBtn" type="submit" value="Send Reservation">
         </form>
@@ -344,34 +344,32 @@
             <div class="location">
                 <h4>Our Locations:</h4>
                 <div class="locations">
-                    <p>Carretera Costera Sur,
+                    <p onclick="address1()">Av. Rafael E. Melgar, Centro, 
                         77600 San Miguel de Cozumel, Q.R., México</p>
                     <p>&#9742;<a href="tel:+52987688511"> +52 98 7688 5137</a></p>
                 </div>
                 <br>
                 <div class="locations">
-                    <p>Av Lic Benito Juárez 725A,
-                        10 de Abril, San Miguel de Cozumel, Q.R., México</p>
+                    <p onclick="address2()">Carretera Chankanaab km 4.5, Carretera 
+                        Costera Sur, 77600 San Miguel de Cozumel, Q.R., México</p>
                     <p>&#9742;<a href="tel:+52987688511"> +52 98 7688 5111</a></p>
                 </div>
                 <div class="socialMedia">
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img
-                            src="images/common/Instagram.png" alt="Instagram Logo"></a>
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img
-                            src="images/common/f_logo_RGB-Blue_72.png" alt="Facebook Logo"></a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img
-                            src="images/common/Twitter.png" alt="Twitter Logo"></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src="images/common/Instagram.png" alt="Instagram Logo"></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/common/f_logo_RGB-Blue_72.png" alt="Facebook Logo"></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src="images/common/Twitter.png" alt="Twitter Logo"></a>
                 </div>
             </div>
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21140.750137909425!2d-86.9411692630956!3d20.498356237755164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1608128148219!5m2!1ses!2sar"
                     width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
+                    tabindex="0" id="map"></iframe>
             </div>
             <div class="footerLegal">
                 <p>&copy; <span id="copyYear"></span> | Scoots Moto Rental | Website Design: Nicolas Schaberger</p>
-                <p>Last Updated: <span id="lastUpdated"></span></p>
+                <p>Last Updated: <span id="lastUpdated"></span>  -   <a href="attributions.html" target="_blank" rel="noopener noreferrer">Attributions Page</a> </p>
+                
             </div>
         </div>
     </footer>

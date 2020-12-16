@@ -614,3 +614,41 @@ form label.top textarea{
     text-align: center;
     padding: 1rem;
 }
+
+/////////////////////////////
+////// TOURS //////
+
+.tourOptions article{
+    border: 2px solid $sectionBoxesHard;
+    border-radius: 10px;
+    width: 96%;
+    margin: 2%;
+    .floatL, .floatR{
+        margin: .3rem auto;
+        display: block; 
+        width: 95%;
+        img{
+            width: 100%;            
+        }
+    }
+    .wide{
+        display: block;
+        margin: .3rem auto;
+        width: 95%;
+        img{
+            width: 100%;
+            border-radius: 0 0 10px 10px;
+        }
+    }
+    h3, p{
+        padding: 0 2%;
+    }
+}
+.tours-map{
+    display: block;
+    margin: .5rem auto;
+    width: 95%;
+    img{
+        width: 100%;
+    }
+}

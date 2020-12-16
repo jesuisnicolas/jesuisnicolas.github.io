@@ -973,7 +973,7 @@ label#agreement {
 }
 
 main .reservationsH1 {
-  margin-left: 16%;
+  margin-left: 2%;
 }
 
 form label.top input:required {
@@ -1198,6 +1198,9 @@ form label.top textarea {
   }
   .rentalsH1 {
     margin-left: 3%;
+  }
+  main .reservationsH1 {
+    margin-left: 16%;
   }
   article p {
     font-size: 1.2rem;

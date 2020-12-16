@@ -553,6 +553,27 @@ footer .footerBoxes .footerLegal {
   font-size: 0.8rem;
 }
 
+footer .footerBoxes .footerLegal p a {
+  color: white;
+  text-decoration: none;
+}
+
+.rentalsInfo {
+  border: 1px solid rgba(158, 154, 151, 0.3);
+  border-radius: 10px;
+  max-width: 94%;
+  margin: 0 auto;
+}
+
+.rentalsInfo p {
+  margin-bottom: .8rem;
+  padding: 0 1.5rem;
+}
+
+.rentalsInfo h4 {
+  padding: 0 1.52rem;
+}
+
 .rentalsCards {
   display: block;
   width: 100%;
@@ -705,6 +726,114 @@ th {
   border-collapse: collapse;
 }
 
+form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+form fieldset {
+  margin: 1rem auto;
+  border: 2px solid rgba(158, 154, 151, 0.5);
+  border-radius: 10px;
+  padding: .5rem 2%;
+  max-width: 90%;
+}
+
+form fieldset div {
+  display: block;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  width: 20rem;
+}
+
+form legend {
+  background-color: var(--decoration-color-2);
+  margin: 0 1rem;
+  padding: .5rem .5rem;
+  border-radius: 10px;
+}
+
+form label.top, form form div {
+  display: block;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  width: 20rem;
+}
+
+form label.top input, form form div input {
+  display: block;
+  font-size: 1rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: .75rem;
+  color: #555;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 3px;
+  -webkit-appearance: none;
+}
+
+form label.top select, form form div select {
+  display: block;
+  font-size: 1rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 3px;
+  -webkit-appearance: none;
+}
+
+form label.sbs {
+  display: block;
+  padding: .5rem 0;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #0062a3;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 auto 2rem 5%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+label#agreement {
+  margin-left: 5%;
+}
+
+main .reservationsH1 {
+  margin-left: 16%;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+  margin-right: -6px;
+  border-collapse: collapse;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+  margin-right: -6px;
+  border-collapse: collapse;
+}
+
+form label.top textarea {
+  width: 100%;
+  height: 10rem;
+  max-width: 20rem;
+}
+
+.thanksH1 {
+  text-align: center;
+  padding: 1rem;
+}
+
 @media only screen and (min-width: 600px) {
   body main {
     max-width: 800px;
@@ -846,6 +975,9 @@ th {
   footer .footerBoxes .footerLegal {
     grid-column: 1 / 3;
     grid-row: 3;
+  }
+  .rentalsInfo {
+    max-width: 80%;
   }
   .rentalsCards {
     display: grid;

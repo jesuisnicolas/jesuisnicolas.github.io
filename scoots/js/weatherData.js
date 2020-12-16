@@ -1,6 +1,5 @@
 const mydate = new Date();
 const hoy = mydate.getDay();
-const cityId = 3530103;
 const apiKey = "76906579f4efc58a128720f93bf9efd1";
 
 const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];

@@ -166,6 +166,10 @@ footer .footerBoxes{
 ////////////////////////////////////////////////////////
 ////// RENTALS PAGE //////
 
+.rentalsInfo{
+    max-width: 80%;
+}
+
 .rentalsCards{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -184,4 +188,9 @@ footer .footerBoxes{
 .rentalsH1{
     margin-left: 3%;
 }
+
+///////////////////////////////////////////
+////// RESERVATIONS //////
+
+
 

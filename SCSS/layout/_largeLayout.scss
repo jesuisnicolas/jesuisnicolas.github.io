@@ -1,0 +1,56 @@
+@import "../utils/variables";
+ 
+.page-wrapper {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    .intro{
+    grid-column: 1 / 13;
+    grid-row: 1/2;
+    }
+    .main {
+    grid-column: 1 / 13;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    }
+}
+
+.sidebar { 
+    display: block;
+    grid-column: 1 / 5;
+    grid-row: 2 / 5;
+    padding: $large-lateral-padding;
+    margin-top: 20px;
+    .wrapper {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: $box-background-color;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+ 
+.summary {
+    padding: 3% 10%;
+    p{
+    font-size: 1.2rem;
+    }
+}
+
+.explanation,
+.participation, 
+.benefits{
+    grid-column: 5 / 13;
+    margin: 20px 20px 0 30px;
+}
+
+.requirements{
+    grid-column: 1 / 13;
+    margin-top: 20px;
+}
+
+footer{
+    grid-column: 1 / 12;
+    margin: 20px auto 10px
+}

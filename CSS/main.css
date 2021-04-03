@@ -1,0 +1,629 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button;
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+h1, h2 {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  z-index: 3;
+}
+
+h1 {
+  font-size: 10vw;
+  margin-bottom: .2rem;
+  margin-top: 0;
+  background: -webkit-linear-gradient(#eee, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: #e4655f 0 0 10px;
+}
+
+h2 {
+  font-size: 4.5vw;
+  margin-top: 0.2rem;
+  background: -webkit-linear-gradient(#333, #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: #e6e6e6 0 0 5px;
+}
+
+abbr {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* 
+*NOTE: Some of the animations, like the flames in the rocket, 
+*the spinning of the asteroids, and the balancing moon have
+*been coded inside the SVG file to allow us control the movement
+*and the position without worrying about one animation changing
+*the behavior of the other. This animations have been made 
+*using a <style> tag inside the svg.
+*/
+/*Big Asteroid in Hero*/
+header::before {
+  display: block;
+  content: "";
+  background-image: url("../images/asteroid-big.svg");
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  transform: translate(110vw, -200px);
+}
+
+@media screen and (max-width: 650px) {
+  header::before {
+    animation: asteroid1 8s linear infinite;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  header::before {
+    animation: asteroid1 11s linear infinite;
+  }
+}
+
+/*Medium Asteroid in Hero*/
+header::after {
+  display: block;
+  content: "";
+  background-image: url("../images/asteroid-med.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  transform: translate(110vw, -120px);
+  z-index: 0;
+}
+
+@media screen and (max-width: 650px) {
+  header::after {
+    animation: asteroid2 9s linear infinite;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  header::after {
+    animation: asteroid2 15s linear infinite;
+  }
+}
+
+/*animations for asteroids*/
+@keyframes asteroid1 {
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100px);
+    transform: translateY(200px);
+    opacity: 0;
+  }
+}
+
+@keyframes asteroid2 {
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-120px);
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
+/*rocket for boxes*/
+.explanation::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("../images/rocket.svg");
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  right: 40px;
+  margin-top: -20px;
+  transform: rotateZ(-25deg);
+  z-index: 0;
+}
+
+/* little moon*/
+.participation::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("../images/moon.svg");
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  right: 40px;
+  margin-top: -20px;
+  z-index: 1;
+}
+
+/*rocket ascending*/
+.requirements::before {
+  display: block;
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  background-image: url("../images/rocket.svg");
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  left: 40px;
+  margin-bottom: 100px;
+  transform: translateY(500px);
+  opacity: 0;
+  z-index: 1;
+  animation: fly 7s linear infinite;
+}
+
+@keyframes fly {
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+}
+
+/*asteroid in box*/
+.benefits::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("../images/asteroid-med.svg");
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  right: 40px;
+  margin-top: -20px;
+  z-index: 1;
+}
+
+/*planet pulsating*/
+.preamble::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("../images/planet.svg");
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  right: 50px;
+  margin-top: -20px;
+  z-index: 1;
+  filter: drop-shadow(0px 0px 3px #e0bb16);
+  animation: glow 1s linear infinite;
+}
+
+@keyframes glow {
+  50% {
+    filter: drop-shadow(0px 0px 10px #f36f22);
+  }
+}
+
+/*changes made for the medium layout*/
+@media (min-width: 651px) {
+  .preamble::before {
+    right: 150px;
+  }
+  .requirements::before {
+    transform: translateY(340px);
+  }
+}
+
+@media (min-width: 1400px) {
+  .preamble::before {
+    right: 250px;
+  }
+}
+
+/*scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #09011b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c8d4da;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+h1, h2 {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  z-index: 3;
+}
+
+h1 {
+  font-size: 10vw;
+  margin-bottom: .2rem;
+  margin-top: 0;
+  background: -webkit-linear-gradient(#eee, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: #e4655f 0 0 10px;
+}
+
+h2 {
+  font-size: 4.5vw;
+  margin-top: 0.2rem;
+  background: -webkit-linear-gradient(#333, #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: #e6e6e6 0 0 5px;
+}
+
+abbr {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+body {
+  background-image: url(../images/galaxy.jpg);
+  background-position: center;
+  background-repeat: round;
+  background-size: 100%;
+  overflow-x: hidden;
+  z-index: -2;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 1500px;
+}
+
+.page-wrapper .intro {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.page-wrapper .main {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.intro header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  color: #c8d4da;
+  background: url(../images/galaxy.jpg);
+}
+
+.intro header h1,
+.intro header h2 {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  color: #012A4A;
+}
+
+p {
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  z-index: 2;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #012A4A;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #495057;
+}
+
+.summary {
+  background-color: #c8d4da;
+  background-image: url("../images/metal_texture_small.jpg");
+  padding: 3%;
+  color: #012A4A;
+}
+
+.preamble,
+.explanation,
+.participation,
+.benefits {
+  background-color: #c8d4da;
+  background-image: url("../images/metal_texture_small.jpg");
+  margin: 5vh 10vw;
+  padding: 3%;
+}
+
+.requirements {
+  background-color: #c8d4da;
+  background-image: url("../images/metal_texture_small.jpg");
+  padding: 3%;
+  overflow-y: hidden;
+}
+
+.sidebar {
+  padding: 0 12px;
+}
+
+.sidebar .wrapper {
+  background-color: #c8d4da;
+  background-image: url("../images/metal_texture_small.jpg");
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.sidebar .wrapper h3 {
+  text-align: center;
+}
+
+.sidebar .wrapper a {
+  text-align: left;
+}
+
+footer {
+  margin: 10% auto;
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  color: #c8d4da;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 651px) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .page-wrapper .intro {
+    grid-column: 1 / 13;
+    grid-row: 1/2;
+  }
+  .page-wrapper .main {
+    grid-column: 1 / 13;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .sidebar {
+    display: block;
+    grid-column: 1 / 5;
+    grid-row: 2 / 5;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+  .sidebar .wrapper {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #c8d4da;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .summary {
+    padding: 3% 10%;
+  }
+  .summary p {
+    font-size: 1.2rem;
+  }
+  .explanation,
+  .participation,
+  .benefits {
+    grid-column: 5 / 13;
+    margin: 20px 20px 0 30px;
+  }
+  .requirements {
+    grid-column: 1 / 13;
+    margin-top: 20px;
+  }
+  footer {
+    grid-column: 1 / 12;
+    margin: 20px auto 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

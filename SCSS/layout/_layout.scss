@@ -1,0 +1,133 @@
+@import "../utils/variables";
+
+// body {
+//     background-image: $background-image;
+//     overflow-x: hidden;
+//     z-index: -2;
+// }
+
+// .page-wrapper{
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: auto;
+// }
+// .intro header {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     height: 100vh;
+
+//     h1,
+//     h2 {
+//         font-family: $titles-font;
+//         text-align: center;
+//     }
+// }
+// header {
+//     color: $box-background-color;
+//     background: $background-image;
+// }
+// h3 {
+//     font-family: $titles-font;
+//     color: $p-color;
+// }
+// p {
+//     font-family: $text-font;
+// }
+// a {
+//     text-decoration: none;
+//     font-weight: bold;
+//     color: $p-color;
+//     font-family: $text-font;
+// }
+// a:hover {
+//     text-decoration: underline;
+//     color: $hover-color;
+// }
+// .summary {
+//     background-color: $box-background-color;
+//     padding: 3%;
+//     color: $p-color;
+// }
+
+// .preamble,
+// .explanation,
+// .participation,
+// .benefits {
+//     background-color: $box-background-color;
+//     margin: 5vh 10vw;
+//     padding: 3%;
+// }
+
+// .requirements {
+//     background-color: $box-background-color;
+//     padding: 3%;
+// }
+
+// .sidebar {
+//     padding: $small-lateral-padding;
+// }
+// footer {
+//     margin: 10% auto;
+//     display: flex;
+//     justify-content: center;
+// }
+// footer a {
+//     color: $box-background-color;
+//     padding-left: 10px;
+//     padding-right: 10px;
+// }
+
+// @media (min-width: 650px) {
+//     .page-wrapper {
+//         display: grid;
+//         grid-template-columns: repeat($columns, 1fr);
+//         grid-template-rows: 1vh, auto auto;
+//     }
+
+//     #zen-intro {
+//         grid-column: 1 / 13;
+//         grid-row: 1/2;
+//     }
+
+//     .sidebar { 
+//         display: block;
+//         grid-column: 1 / 4;
+//         grid-row: 2 / 5;
+//         padding: $large-lateral-padding;
+//     }
+
+//     .main {
+//         grid-column: 4 / 13;
+//         grid-row: 2;
+//     }
+
+//     .summary p{
+//         font-size: 1.2rem;
+//     }
+// }
+
+/*scrollbar*/
+
+
+// CHROME, SAFARI AND EDGE
+ /* width */
+ ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #09011b;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $box-background-color;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  } 

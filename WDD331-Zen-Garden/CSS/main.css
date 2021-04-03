@@ -212,6 +212,14 @@ abbr {
   border-bottom: none !important;
 }
 
+/* 
+*NOTE: Some of the animations, like the flames in the rocket, 
+*the spinning of the asteroids, and the balancing moon have
+*been coded inside the SVG file to allow us control the movement
+*and the position without worrying about one animation changing
+*the behavior of the other. This animations have been made 
+*using a <style> tag inside the svg.
+*/
 /*Big Asteroid in Hero*/
 header::before {
   display: block;
@@ -342,6 +350,7 @@ header::after {
   }
 }
 
+/*asteroid in box*/
 .benefits::before {
   display: block;
   content: "";
@@ -355,6 +364,7 @@ header::after {
   z-index: 1;
 }
 
+/*planet pulsating*/
 .preamble::before {
   display: block;
   content: "";
@@ -475,17 +485,14 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  color: #c8d4da;
+  background: url(../images/galaxy.jpg);
 }
 
 .intro header h1,
 .intro header h2 {
   font-family: "Oswald", sans-serif;
   text-align: center;
-}
-
-header {
-  color: #c8d4da;
-  background: url(../images/galaxy.jpg);
 }
 
 h3 {
@@ -495,6 +502,8 @@ h3 {
 
 p {
   font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  z-index: 2;
 }
 
 a {
@@ -537,7 +546,7 @@ a:hover {
   padding: 0 12px;
 }
 
-.wrapper {
+.sidebar .wrapper {
   background-color: #c8d4da;
   background-image: url("../images/metal_texture_small.jpg");
   display: flex;
@@ -546,11 +555,11 @@ a:hover {
   grid-area: 2 / 1 / 3 / 2;
 }
 
-.wrapper h3 {
+.sidebar .wrapper h3 {
   text-align: center;
 }
 
-.wrapper a {
+.sidebar .wrapper a {
   text-align: left;
 }
 
@@ -590,19 +599,17 @@ footer a {
   }
   .sidebar .wrapper {
     height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #c8d4da;
+    padding: 10px;
+    cursor: pointer;
   }
   .summary {
     padding: 3% 10%;
   }
   .summary p {
     font-size: 1.2rem;
-  }
-  .sidebar .wrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: #c8d4da;
-    padding: 10px;
-    cursor: pointer;
   }
   .explanation,
   .participation,
@@ -618,10 +625,5 @@ footer a {
     grid-column: 1 / 12;
     margin: 20px auto 10px;
   }
-}
-
-p {
-  position: relative;
-  z-index: 2;
 }
 /*# sourceMappingURL=main.css.map */

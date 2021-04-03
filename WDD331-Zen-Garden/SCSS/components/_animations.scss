@@ -1,3 +1,12 @@
+/* 
+*NOTE: Some of the animations, like the flames in the rocket, 
+*the spinning of the asteroids, and the balancing moon have
+*been coded inside the SVG file to allow us control the movement
+*and the position without worrying about one animation changing
+*the behavior of the other. This animations have been made 
+*using a <style> tag inside the svg.
+*/
+
 /*Big Asteroid in Hero*/
 header::before {
   display: block;
@@ -71,7 +80,6 @@ header::after {
 }
 
 /*rocket for boxes*/
-
 .explanation::before{
   display: block;
   content: "";
@@ -97,7 +105,6 @@ header::after {
   height: 100px;
   right: 40px;
   margin-top: -20px;
-  // transform: rotateZ(-25deg);
   z-index: 1;
 }
 
@@ -132,6 +139,7 @@ header::after {
     
   }
 
+/*asteroid in box*/
 .benefits::before{
   display: block;
   content: "";
@@ -145,6 +153,7 @@ header::after {
   z-index: 1;
 }
 
+/*planet pulsating*/
 .preamble::before{
   display: block;
   content: "";

@@ -1,28 +1,5 @@
 @import "../utils/variables";
  
-// .page-wrapper{
-//     display: grid;
-//     grid-template-columns: repeat($columns, 1fr);
-//     grid-template-rows: 1vh, auto auto;
-// } 
-
-// #zen-intro{
-//     grid-column: 1 / 13;
-//     grid-row: 1/2;
-// }
-
-// .sidebar{
-//     display: block;
-//     grid-column: 1 / 4;
-//     grid-row: 2 / 5;
-//     padding: $large-lateral-padding;
-// }
-
-// .main{
-//     grid-column: 4 / 13;
-//     grid-row: 2;
-// } 
-
 .page-wrapper {
     display: grid;
     grid-template-columns: repeat($columns, 1fr);
@@ -46,6 +23,11 @@
     margin-top: 20px;
     .wrapper {
         height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: $box-background-color;
+        padding: 10px;
+        cursor: pointer;
     }
 }
  
@@ -54,14 +36,6 @@
     p{
     font-size: 1.2rem;
     }
-}
-
-.sidebar .wrapper{
-    display: flex;
-    flex-direction: column;
-    background-color: $box-background-color;
-    padding: 10px;
-    cursor: pointer;
 }
 
 .explanation,
@@ -80,23 +54,3 @@ footer{
     grid-column: 1 / 12;
     margin: 20px auto 10px
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// .summary, .preamble{
-//     display: block;
-// }
-
-// .sidebar{
-//     display: block;
-//     float: left;
-// }

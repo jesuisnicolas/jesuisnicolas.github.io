@@ -1,0 +1,19 @@
+@import "base/normalize";
+@import "base/typography";
+// @import "components/buttons";
+@import "components/animations";
+// @import "utils/mixins";
+@import "utils/variables";
+
+@import "layout/layout";
+
+@import "layout/smallLayout";
+
+@media (min-width: 651px) {
+    @import "layout/largeLayout";
+}
+
+p{
+    position: relative;
+    z-index: 2;
+}
